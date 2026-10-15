@@ -1,0 +1,387 @@
+
+.contenedor-video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    overflow: hidden;
+    background: #000;
+    isolation: isolate;
+}
+
+/* Video de YouTube a pantalla completa */
+.video-fondo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100vw;
+    height: 56.25vw;
+
+    min-width: 177.78vh;
+    min-height: 100vh;
+
+    transform: translate(-50%, -50%);
+    border: 0;
+    pointer-events: none;
+    z-index: -2;
+}
+
+/* Texto y flecha por encima del video */
+.contenido-encima {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px 50px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.35),
+        transparent 30%,
+        transparent 65%,
+        rgba(0, 0, 0, 0.65)
+    );
+}
+
+
+.flecha-abajo {
+    color: #fff;
+    font-size: 32px;
+    text-decoration: none;
+    animation: rebote 2s ease-in-out infinite;
+}
+
+.flecha-abajo:hover {
+    color: #e10600;
+}
+
+@keyframes rebote {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+}
+
+@media (max-width: 768px) {
+    .contenedor-video {
+        height: 85vh;
+        min-height: 450px;
+    }
+
+    .contenido-encima {
+        padding: 20px 15px 35px;
+    }
+
+    .titulo-gama {
+        letter-spacing: 2px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .flecha-abajo {
+        animation: none;
+    }
+}
+
+
+
+
+
+
+.categorias{
+text-align: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #211f1d; /* Color gris oscuro idéntico a tus imágenes */
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+.gama-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- MENÚ LATERAL FLOTANTE (Opciones de la izquierda) --- */
+.side-dots-nav {
+    position: fixed;
+    left: 40px;
+    bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    z-index: 90;
+}
+
+.side-nav-text {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #8c8c8c;
+    writing-mode: vertical-lr; /* Pone el texto de forma vertical hacia arriba */
+    transform: rotate(180deg);
+    margin-bottom: 10px;
+}
+
+.nav-dot {
+    width: 5px;
+    height: 5px;
+    background-color: rgba(79, 78, 78, 0.2);
+    border-radius: 50%;
+}
+
+.nav-dot.active {
+    background-color: #572929;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* --- CONTENEDOR REPETIBLE PARA CADA AUTO --- */
+.hero-container {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    min-height: 90vh; /* Asegura que cada coche tome casi toda la pantalla al bajar */
+    margin: 0 auto;
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: row; /* Por defecto: Texto izquierda, Coche derecha */
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 
+   ¡MAGIA DE INTERCALADO AUTOMÁTICO!
+   Todas las secciones pares (la 2, la 4, la 6, etc.) se invertirán solas.
+   Ahora el coche pasará a la izquierda y el texto a la derecha de manera limpia.
+*/
+.hero-container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Ajuste del indicador superior según el lado en el que esté */
+.hero-container:nth-child(even) .top-indicator {
+    left: auto;
+    right: 80px;
+}
+
+/* --- ELEMENTOS INTERNOS DE CADA SECCIÓN --- */
+
+/* Indicador superior (Ej: 2 ------- GAMA) */
+.top-indicator {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #8c8c8c;
+    display: flex;
+    align-items: center;
+}
+
+.top-indicator .line {
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: #d11218; /* Rojo Ferrari */
+    margin: 0 15px;
+}
+
+.top-indicator .text {
+    color: #d11218;
+}
+
+/* Panel de Información (Izquierda / Derecha) */
+.content-panel {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    z-index: 5;
+}
+
+.brand-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Alineación de logos en las secciones invertidas */
+.hero-container:nth-child(even) .brand-logo-container {
+    align-items: flex-start;
+}
+
+.brand-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    color: #000000;
+}
+
+.model-title {
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    color: #000000;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 6px 20px 6px 0;
+    display: inline-block;
+}
+
+/* Grupo de Botones (CTAs) */
+.cta-group {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.cta-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.cta-link:hover {
+    color: #cccccc;
+    transform: translateX(6px);
+}
+
+.arrow-circle {
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(43, 42, 42, 0.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 12px;
+    color: #010101;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.cta-link:hover .arrow-circle {
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Visualización del auto */
+.car-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-visual img {
+    max-width: 100%;
+    height: auto;
+    transform: scale(1.1);
+    filter: drop-shadow(0 30px 25px rgba(0, 0, 0, 0.6)); /* Sombra realista en el suelo oscuro */
+}
+
+/* Línea sutil divisoria entre autos */
+.section-divider {
+    width: calc(100% - 160px);
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+}
+
+/* --- BARRA INFERIOR DE NAVEGACIÓN --- */
+.bottom-navbar {
+    background-color: #111111;
+    width: 100%;
+    padding: 25px 80px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-info {
+    display: flex;
+    align-items: center;
+    color: #8c8c8c;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.nav-info .dot {
+    width: 5px;
+    height: 5px;
+    background-color: #8c8c8c;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* --- RESPONSIVE DESIGN (TABLETS Y MÓVILES) --- */
+@media (max-width: 992px) {
+    .side-dots-nav { display: none; }
+    
+    .hero-container {
+        padding: 100px 30px 60px 30px;
+        min-height: auto;
+    }
+
+    /* En celulares cancelamos el row-reverse para que todo caiga en orden idéntico */
+    .hero-container,
+    .hero-container:nth-child(even) {
+        flex-direction: column !important;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-container:nth-child(even) .top-indicator {
+        right: auto;
+        left: 30px;
+    }
+
+    .top-indicator { left: 30px; }
+
+    .content-panel {
+        width: 100%;
+        align-items: center;
+    }
+
+    .brand-logo-container {
+        align-items: center !important;
+    }
+
+    .model-title {
+        padding: 6px 20px;
+    }
+
+    .section-divider {
+        width: calc(100% - 60px);
+        left: 30px;
+    }
+}
