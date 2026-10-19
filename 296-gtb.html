@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrari 296 GTB | Hybrid Berlinetta - Official Ferrari Dealership</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="autos.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-ferrari fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="pagine.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="42" viewBox="0 0 100 130" fill="#FF0000" class="me-2">
+          <path d="M10,5 L90,5 L90,125 L10,125 Z" fill="none" stroke="#D40000" stroke-width="3"/>
+          <text x="50%" y="60%" font-size="28" font-family="Montserrat" font-weight="900" fill="#ffffff" text-anchor="middle">SF</text>
+        </svg>
+        <span class="text-white font-heading fw-bold fs-5 tracking-wider ms-1">FERRARI</span>
+      </a>
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFerrari">
+        <i class="fa-solid fa-bars fs-4"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarFerrari">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="pagine.html" data-i18n="nav_home">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" data-i18n="nav_modelli">Modelli</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="pagine.html" data-i18n="nav_catalogo"><i class="fa-solid fa-car me-2"></i>Catalogo Auto</a></li>
+              <li><a class="dropdown-item" href="ferrari_purchase_requirements.html" data-i18n="nav_requisiti"><i class="fa-solid fa-shield-halved me-2"></i>Requisiti d'Acquisto</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#prestaciones" data-i18n="nav_specs">Prestazioni</a></li>
+          <li class="nav-item"><a class="nav-link" href="#evaluacion" data-i18n="nav_contact">VIP Evaluation</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-1">
+          <button class="lang-btn active" onclick="setLanguage('es')">ES</button>
+          <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+          <button class="lang-btn" onclick="setLanguage('it')">IT</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section" style="background: linear-gradient(180deg, rgba(11,11,11,0.6) 0%, rgba(11,11,11,1) 100%), url('img/296GTB.png') center/cover no-repeat;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000">
+          <div class="text-uppercase text-danger fw-bold mb-2 tracking-widest" style="font-size: 0.85rem;" data-i18n="hero_badge_gtb">Berlinetta / Plug-in Hybrid</div>
+          <h1 class="hero-title text-white mb-3" data-i18n="hero_title_gtb">FERRARI 296 GTB</h1>
+          <p class="hero-subtitle mb-4" data-i18n="hero_subtitle_gtb">Define la diversión al volante. Equipado con un revolucionario motor V6 híbrido enchufable de 120°, redefine los estándares de agilidad y respuesta instantánea.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#evaluacion" class="btn btn-ferrari-red" data-i18n="hero_btn_eval">Solicitar Información VIP</a>
+            <a href="#prestaciones" class="btn btn-outline-light px-4 py-2 d-inline-flex align-items-center fs-7" style="border-radius: 2px;" data-i18n="hero_btn_specs">Ver Especificaciones</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="prestaciones" class="py-5 bg-black border-bottom border-secondary">
+    <div class="container py-3">
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="spec-card">
+            <div class="spec-value">830 CV</div>
+            <div class="spec-label" data-i18n="spec_power_gtb">Potencia Combinada</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="spec-card">
+            <div class="spec-value">2.4 s</div>
+            <div class="spec-label" data-i18n="spec_acc_gtb">0 - 100 km/h</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="spec-card">
+            <div class="spec-value">330 km/h</div>
+            <div class="spec-label" data-i18n="spec_speed_gtb">Velocidad Máx</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="spec-card">
+            <div class="spec-value">25 km</div>
+            <div class="spec-label" data-i18n="spec_range_gtb">Autonomía EV</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 my-4">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h6 class="text-danger fw-bold text-uppercase tracking-widest" data-i18n="tech_subtitle_gtb">Evolución Híbrida</h6>
+        <h2 class="text-white fw-bold display-6" data-i18n="tech_title_gtb">Tecnología V6 a 120°</h2>
+        <div class="bg-danger mx-auto mt-3" style="width: 50px; height: 2px;"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="req-card">
+            <div class="icon-box"><i class="fa-solid fa-microchip"></i></div>
+            <h4 class="text-white h5 mb-3" data-i18n="f1_title_gtb">Arquitectura V6 Turbo</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="f1_desc_gtb">Primer motor de 6 cilindros en un vehículo de producción de la marca con turbocompresores ubicados en el interior de la V.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="req-card">
+            <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
+            <h4 class="text-white h5 mb-3" data-i18n="f2_title_gtb">Motor Eléctrico MGU-K</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="f2_desc_gtb">Derivado de la Fórmula 1, aporta potencia adicional instantánea y permite la conducción en modo 100% eléctrico.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="req-card">
+            <div class="icon-box"><i class="fa-solid fa-gauge-high"></i></div>
+            <h4 class="text-white h5 mb-3" data-i18n="f3_title_gtb">Distancia entre Ejes Corta</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="f3_desc_gtb">Distancia entre ejes reducida y soluciones dinámicas que garantizan una agilidad extrema y reacciones ultrarrápidas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="evaluacion" class="py-5 bg-dark border-top border-bottom border-secondary">
+    <div class="container py-4">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8" data-aos="zoom-in">
+          <div class="text-center mb-4">
+            <h6 class="text-danger fw-bold text-uppercase tracking-widest" data-i18n="form_subtitle_gtb">Atención Exclusiva</h6>
+            <h2 class="text-white fw-bold display-6" data-i18n="form_title_gtb">Solicitar Información del 296 GTB</h2>
+            <p class="text-muted small" data-i18n="form_desc_gtb">Complete sus datos para recibir asesoramiento personalizado de nuestros especialistas.</p>
+          </div>
+          <form onsubmit="event.preventDefault(); alert('Solicitud para Ferrari 296 GTB enviada con éxito.');">
+            <div class="row g-3">
+              <div class="col-md-6"><input type="text" class="form-control" placeholder="Nombre completo" required></div>
+              <div class="col-md-6"><input type="email" class="form-control" placeholder="Correo electrónico" required></div>
+              <div class="col-md-6"><input type="tel" class="form-control" placeholder="Teléfono de contacto" required></div>
+              <div class="col-md-6">
+                <select class="form-select" required>
+                  <option selected value="296 GTB">Ferrari 296 GTB</option>
+                </select>
+              </div>
+              <div class="col-12"><textarea class="form-control" rows="4" placeholder="Comentarios adicionales..."></textarea></div>
+              <div class="col-12 text-center mt-4"><button type="submit" class="btn btn-ferrari-red px-5" data-i18n="form_btn_gtb">Enviar Solicitud</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container text-center">
+      <p class="small mb-0">&copy; 2026 Ferrari S.p.A. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    const translations = {
+      it: {
+        nav_home: "Home", nav_modelli: "Modelli", nav_catalogo: "Catalogo Auto", nav_requisiti: "Requisiti d'Acquisto", nav_specs: "Prestazioni", nav_contact: "Valutazione VIP",
+        hero_badge_gtb: "Berlinetta / Plug-in Hybrid", hero_title_gtb: "FERRARI 296 GTB", hero_subtitle_gtb: "Ridefinisce il piacere di guida. Equipaggiata con un rivoluzionario motore V6 ibrido plug-in a 120°, ridefinisce gli standard di agilità e prontezza.",
+        hero_btn_eval: "Richiedi Informazioni VIP", hero_btn_specs: "Specifiche Tecniche",
+        spec_power_gtb: "Potenza Combinata", spec_acc_gtb: "0 - 100 km/h", spec_speed_gtb: "Velocità Max", spec_range_gtb: "Autonomia EV",
+        tech_subtitle_gtb: "Evoluzione Ibrida", tech_title_gtb: "Tecnologia V6 a 120°",
+        f1_title_gtb: "Architettura V6 Turbo", f1_desc_gtb: "Primo motore a 6 cilindri su una vettura di produzione del Cavallino Rampante con turbocompressori posizionati all'interno della V.",
+        f2_title_gtb: "Motore Elettrico MGU-K", f2_desc_gtb: "Derivato dalla Formula 1, fornisce potenza aggiuntiva istantanea e consente la guida in modalità 100% elettrica.",
+        f3_title_gtb: "Passo Corto", f3_desc_gtb: "Passo ridotto e soluzioni dinamiche che garantiscono un'agilità estrema e reazioni ultra-rapide.",
+        form_subtitle_gtb: "Assistenza Esclusiva", form_title_gtb: "Richiedi Informazioni sul 296 GTB", form_desc_gtb: "Compila i tuoi dati per ricevere una consulenza personalizzata.", form_btn_gtb: "Invia Richiesta"
+      },
+      en: {
+        nav_home: "Home", nav_modelli: "Models", nav_catalogo: "Car Catalog", nav_requisiti: "Purchase Requirements", nav_specs: "Performance", nav_contact: "VIP Evaluation",
+        hero_badge_gtb: "Berlinetta / Plug-in Hybrid", hero_title_gtb: "FERRARI 296 GTB", hero_subtitle_gtb: "Defines driving fun. Equipped with a revolutionary 120° plug-in hybrid V6 engine, it redefines standards of agility and instant response.",
+        hero_btn_eval: "Request VIP Information", hero_btn_specs: "View Specifications",
+        spec_power_gtb: "Combined Power", spec_acc_gtb: "0 - 100 km/h", spec_speed_gtb: "Top Speed", spec_range_gtb: "EV Range",
+        tech_subtitle_gtb: "Hybrid Evolution", tech_title_gtb: "120° V6 Technology",
+        f1_title_gtb: "Turbo V6 Architecture", f1_desc_gtb: "First 6-cylinder engine in a production car from the brand featuring turbochargers positioned inside the V.",
+        f2_title_gtb: "MGU-K Electric Motor", f2_desc_gtb: "Derived from Formula 1, it delivers instant additional power and enables 100% electric driving.",
+        f3_title_gtb: "Short Wheelbase", f3_desc_gtb: "Shortened wheelbase and dynamic solutions guaranteeing extreme agility and ultra-fast reactions.",
+        form_subtitle_gtb: "Exclusive Attention", form_title_gtb: "Request 296 GTB Information", form_desc_gtb: "Complete your details to receive personalized advice from our specialists.", form_btn_gtb: "Submit Request"
+      },
+      es: {
+        nav_home: "Home", nav_modelli: "Modelli", nav_catalogo: "Catalogo Auto", nav_requisiti: "Requisiti d'Acquisto", nav_specs: "Prestazioni", nav_contact: "VIP Evaluation",
+        hero_badge_gtb: "Berlinetta / Plug-in Hybrid", hero_title_gtb: "FERRARI 296 GTB", hero_subtitle_gtb: "Define la diversión al volante. Equipado con un revolucionario motor V6 híbrido enchufable de 120°, redefine los estándares de agilidad y respuesta instantánea.",
+        hero_btn_eval: "Solicitar Información VIP", hero_btn_specs: "Ver Especificaciones",
+        spec_power_gtb: "Potencia Combinada", spec_acc_gtb: "0 - 100 km/h", spec_speed_gtb: "Velocidad Máx", spec_range_gtb: "Autonomía EV",
+        tech_subtitle_gtb: "Evolución Híbrida", tech_title_gtb: "Tecnología V6 a 120°",
+        f1_title_gtb: "Arquitectura V6 Turbo", f1_desc_gtb: "Primer motor de 6 cilindros en un vehículo de producción de la marca con turbocompresores ubicados en el interior de la V.",
+        f2_title_gtb: "Motor Eléctrico MGU-K", f2_desc_gtb: "Derivado de la Fórmula 1, aporta potencia adicional instantánea y permite la conducción en modo 100% eléctrico.",
+        f3_title_gtb: "Distancia entre Ejes Corta", f3_desc_gtb: "Distancia entre ejes reducida y soluciones dinámicas que garantizan una agilidad extrema y reacciones ultrarrápidas.",
+        form_subtitle_gtb: "Atención Exclusiva", form_title_gtb: "Solicitar Información del 296 GTB", form_desc_gtb: "Complete sus datos para recibir asesoramiento personalizado de nuestros especialistas.", form_btn_gtb: "Enviar Solicitud"
+      }
+    };
+    function setLanguage(lang) {
+      if (!translations[lang]) return;
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.innerText.toLowerCase() === lang) btn.classList.add('active');
+      });
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang][key]) element.innerText = translations[lang][key];
+      });
+      document.documentElement.lang = lang;
+    }
+  </script>
+</body>
+</html>

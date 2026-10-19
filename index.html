@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concessionario Ufficiale Ferrari</title>
+    <link rel="stylesheet" href="bibliotecas/aos-master/aos-master/dist/aos.css">
+    <link rel="stylesheet" href="bibliotecas/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bibliotecas/fontawesome-free-7.3.1-web/fontawesome-free-7.3.1-web/css/all.min.css">
+    <link rel="stylesheet" href="prueba.css">
+</head>
+<body class="bg-dark text-white">
+
+<!-- NAVBAR CON STILE FERRARI -->
+<nav class="navbar navbar-expand-lg sticky-top custom-navbar">
+  <div class="container-fluid px-lg-5">   
+    <a class="navbar-brand d-flex align-items-center" href="">
+      <img src="img/ferrari_logo_con_texto_sin_fondo.png" alt="Ferrari Logo" class="LogoIMG">
+    </a>
+    
+    <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars fs-3 text-danger"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active fw-semibold" aria-current="page" href="#">Home</a>
+        </li>
+        
+        <!-- DROPDOWN MODELLI & REQUISITI -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Modelli
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark border-secondary shadow-lg">
+            <li><a class="dropdown-item py-2" href="pagine.html"><i class="fas fa-car me-2 text-danger"></i> Catalogo Auto</a></li>
+            <li><a class="dropdown-item py-2" href="ferrari_purchase_requirements.html"><i class="fas fa-id-card me-2 text-danger"></i> Requisiti d'Acquisto</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="https://www.google.com/maps/place/Ferrari+Factory/@44.5330327,10.7125849,12z/data=!4m10!1m2!2m1!1sMaranello:+Il+Quartier+Generale+ferrari!3m6!1s0x477fe3a75a0699a7:0xb1a1e710282361ef!8m2!3d44.5330327!4d10.8650202!15sCidNYXJhbmVsbG86IElsIFF1YXJ0aWVyIEdlbmVyYWxlIGZlcnJhcmkiA4gBAVooIiZtYXJhbmVsbG8gaWwgcXVhcnRpZXIgZ2VuZXJhbGUgZmVycmFyaZIBC2Nhcl9mYWN0b3J5mgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDI1U2VtVlhjR3hUUm14V1RGUnNTVlZVVG10aFYzQlZUMWhTVVdSc1JSQULgAQD6AQQIZxBH!16s%2Fg%2F11b6cxpv46?entry=ttu&g_ep=EgoyMDI2MTAxNC4wIKXMDSoASAFQAw%3D%3D">Maranello</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#contatti">Contatti</a>
+        </li>
+      </ul>
+
+      <form class="d-flex search-box" role="search">
+        <input class="form-control me-2 bg-dark text-white border-secondary search-input" type="search" placeholder="Cerca modello..." aria-label="Search"/>
+        <button class="btn btn-ferrari" type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- SEZIONE PRINCIPALE (CAROSELLO E SHOWROOM) -->
+<section id="inizio" class="section-inicio d-flex align-items-center py-5">
+  <div class="container-fluid px-lg-5">
+    <div class="row g-4 align-items-center">
+      
+      <!-- Colonna sinistra (Carosello auto) -->
+      <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000">
+        <div id="carouselExampleCaptions" class="carousel slide custom-carousel shadow-lg rounded-3 overflow-hidden">
+          
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/f80.png" class="d-block w-100 carousel-img" alt="Ferrari F80">
+              <div class="carousel-caption custom-caption">
+                <span class="badge bg-danger mb-2 px-3 py-1 text-uppercase tracking-wider">Hypercar</span>
+                <h3 class="fw-bold text-white display-6">F80</h3>
+                <p class="text-white-50 small d-none d-md-block">La massima espressione di hypercar di Maranello: potenza pura da competizione, tecnologia derivata dalla Formula 1 e un'esperienza di guida viscerale e ineguagliabile.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="img/testarossa.png" class="d-block w-100 carousel-img" alt="Ferrari 849 Testarossa">
+              <div class="carousel-caption custom-caption">
+                <span class="badge bg-danger mb-2 px-3 py-1 text-uppercase tracking-wider">V12 Hybrid</span>
+                <h3 class="fw-bold text-white display-6">849-Testarossa</h3>
+                <p class="text-white-50 small d-none d-md-block">L'iconico mito reinterpretato in chiave moderna, con tecnologia ibrida da 1050 CV, prestazioni record e un design audace ispirato alla storia.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="img/amalfi.png" class="d-block w-100 carousel-img" alt="Ferrari Amalfi">
+              <div class="carousel-caption custom-caption">
+                <span class="badge bg-danger mb-2 px-3 py-1 text-uppercase tracking-wider">Gran Turismo</span>
+                <h3 class="fw-bold text-white display-6">Amalfi</h3>
+                <p class="text-white-50 small d-none d-md-block">Un raffinato gran turismo V8 dal fascino senza tempo, che combina la massima eleganza, comfort di guida quotidiano e pura sportività italiana.</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon p-3 rounded-circle bg-dark bg-opacity-50" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon p-3 rounded-circle bg-dark bg-opacity-50" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div> 
+
+      <!-- Colonna destra (Informazioni della concessionaria) -->
+      <div class="col-lg-4" data-aos="fade-left" data-aos-duration="1000">
+        <div class="info-card p-4 rounded-3 shadow-lg border-start border-danger border-4">
+          <h4 class="text-uppercase tracking-wider fw-bold text-danger mb-3">
+            <i class="fas fa-store me-2"></i> Showroom
+          </h4>
+          <p class="texto text-white-50 mb-3">
+            La nostra concessionaria si trova in un'area urbana di facile accesso, unendo un catalogo completo di modelli nuovi e usati selezionati con la fiducia che cerchi per acquistare la tua prossima vettura.
+          </p>
+          <p class="texto text-white-50 mb-3">
+            Ti offriamo soluzioni di finanziamento su misura, gestione completa delle pratiche e test drive esclusivi fin dal momento della tua visita per garantirti un'esperienza impeccabile.
+          </p>
+          <a href="https://maps.google.com" target="_blank" class="btn btn-outline-danger w-100 fw-bold text-uppercase tracking-wider py-2 mt-2">
+            <i class="fas fa-map-marker-alt me-2"></i> Posizione Google Maps
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div> 
+</section>
+
+<!-- SEZIONE STORIA DI FERRARI E LA CASA DI MARANELLO -->
+<section id="storia" class="py-5" style="background-color: rgba(11, 11, 11, 0.95); border-top: 1px solid rgba(212, 0, 0, 0.2);">
+  <div class="container py-4">
+    <div class="text-center mb-5" data-aos="fade-down">
+      <span class="badge bg-danger text-uppercase px-3 py-2 mb-2 tracking-widest">Mito e Leggenda</span>
+      <h2 class="display-5 fw-bold text-white">La Casa di Maranello & La Storia</h2>
+      <p class="text-white-50 mx-auto" style="max-width: 700px;">Dove il sogno di Enzo Ferrari prende vita: il cuore pulsante del Cavallino Rampante dal 1943.</p>
+    </div>
+
+    <div class="row g-5 align-items-center mb-5">
+      <!-- Blocco 1: Enzo e le Origini -->
+      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+        <div class="position-relative rounded-3 overflow-hidden shadow-lg border border-secondary border-opacity-25">
+          <img src="img/125 s75.webp" class="img-fluid w-100 object-fit-cover" style="height: 320px;" alt="Origini Ferrari">
+          <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-dark text-white">
+            <h5 class="text-danger fw-bold m-0">1947: Il Primo Capolavoro</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+        <h3 class="h4 text-danger fw-bold mb-3"><i class="fas fa-flag-checkered me-2"></i> Le Origini del mito</h3>
+        <p class="text-white-50 lh-lg text-justify">
+          Fondata da Enzo Ferrari a Modena e trasferita successivamente a Maranello, la Scuderia Ferrari rappresenta la massima espressione della passione automobilistica mondiale. Il leggendario 125 S, primo automobile a portare il nome Ferrari, ha acceso le piste nel 1947, segnando l'inizio di una dinastia ineguagliabile di vittorie e design all'avanguardia.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-5 align-items-center flex-lg-row-reverse">
+      <!-- Blocco 2: La Fabbrica di Maranello -->
+      <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+        <div class="position-relative rounded-3 overflow-hidden shadow-lg border border-secondary border-opacity-25">
+          <img src="img/fabrica-ferrari.jpg" class="img-fluid w-100 object-fit-cover" style="height: 320px;" alt="Fabbrica Maranello">
+          <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-dark text-white">
+            <h5 class="text-danger fw-bold m-0">Maranello: Il Quartiere Generale</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+        <h3 class="h4 text-danger fw-bold mb-3"><i class="fas fa-industry me-2"></i> La Fabbrica e la Cittadella</h3>
+        <p class="text-white-50 lh-lg text-justify">
+          La storica sede di Via Abetone Inferiore a Maranello è molto più di un impianto produttivo; è un santuario tecnologico. Qui convivono la linea di montaggio artigianale dei motori V12 e ibridi ad alte prestazioni, la galleria del vento di ultima generazione e il dipartimento di personalizzazione *Tailor Made*, dove ogni cliente modella la propria leggenda su ruote.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contatti" class="custom-footer pt-5 pb-4">
+  <div class="container text-center text-md-start">
+    <div class="row g-4">
+
+      <!-- Colonna 1: Marchio -->
+      <div class="col-md-4 col-lg-4 mx-auto">
+        <h5 class="text-uppercase mb-4 fw-bold text-danger border-bottom border-danger pb-2 d-inline-block">
+          Concessionario Ferrari
+        </h5>
+        <p id="refran" class="text-white-50 italic fst-italic">
+          “Il valore di una Ferrari non si misura dal numero di chi la possiede, ma dal sogno di chi la desidera.”
+        </p>
+      </div>
+
+      <!-- Colonna 2: Navigazione -->
+      <div class="col-md-3 col-lg-3 mx-auto">
+        <h5 class="text-uppercase mb-4 fw-bold text-danger border-bottom border-danger pb-2 d-inline-block">
+          Navigazione
+        </h5>
+        <ul class="list-unstyled footer-links">
+          <li class="mb-2"><a href="#inizio" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right text-danger me-2"></i>Home</a></li>
+          <li class="mb-2"><a href="pagine.html" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right text-danger me-2"></i>Catalogo Auto</a></li>
+          <li class="mb-2"><a href="ferrari_purchase_requirements.html" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right text-danger me-2"></i>Requisiti d'Acquisto</a></li>
+          <li class="mb-2"><a href="#storia" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right text-danger me-2"></i>Maranello</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonna 3: Contatti -->
+      <div class="col-md-5 col-lg-4 mx-auto">
+        <h5 class="text-uppercase mb-4 fw-bold text-danger border-bottom border-danger pb-2 d-inline-block">
+          Contatti
+        </h5>
+        <p class="text-white-50 mb-2"><i class="fas fa-map-marker-alt text-danger me-2"></i> Via Abetone Inferiore 4, Maranello, Italia</p>
+        <p class="text-white-50 mb-2"><i class="fas fa-envelope text-danger me-2"></i> contatto@concessionarioferrari.it</p>
+        <p class="text-white-50 mb-2"><i class="fas fa-phone text-danger me-2"></i> +39 0536 949111</p>
+        <p class="text-white-50 mb-0"><i class="fas fa-clock text-danger me-2"></i> Lun - Ven: 9:00 - 19:00 | Sab: 9:00 - 13:00</p>
+      </div>
+
+    </div>
+
+    <hr class="my-4 border-secondary opacity-25">
+
+    <!-- Bottom Footer -->
+    <div class="row align-items-center">
+      <div class="col-md-7 text-center text-md-start">
+        <p class="text-white-50 mb-0 small">
+          © 2026 Tutti i diritti riservati: <span class="text-white fw-bold">Ferrari S.p.A.</span>
+        </p>
+      </div>
+
+      <div class="col-md-5 text-center text-md-end mt-3 mt-md-0">
+        <div class="d-inline-flex gap-2">
+          <a href="https://www.youtube.com/@Ferrari" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.instagram.com/ferrari/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@ferrari" target="_blank" rel="noopener" class="social-icon" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="bibliotecas/aos-master/aos-master/dist/aos.js"></script>    
+<script src="bibliotecas/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+<script src="bibliotecas/fontawesome-free-7.3.1-web/fontawesome-free-7.3.1-web/js/all.min.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+
+</body>
+</html>

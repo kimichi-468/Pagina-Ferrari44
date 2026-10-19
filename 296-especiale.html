@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrari 296 Speciale | Track-Focused Hybrid Berlinetta</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="autos.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-ferrari fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="pagine.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="42" viewBox="0 0 100 130" fill="#FF0000" class="me-2">
+          <path d="M10,5 L90,5 L90,125 L10,125 Z" fill="none" stroke="#D40000" stroke-width="3"/>
+          <text x="50%" y="60%" font-size="28" font-family="Montserrat" font-weight="900" fill="#ffffff" text-anchor="middle">SF</text>
+        </svg>
+        <span class="text-white font-heading fw-bold fs-5 tracking-wider ms-1">FERRARI</span>
+      </a>
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFerrari">
+        <i class="fa-solid fa-bars fs-4"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarFerrari">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="pagine.html" data-i18n="nav_home">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" data-i18n="nav_modelli">Modelli</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="pagine.html" data-i18n="nav_catalogo"><i class="fa-solid fa-car me-2"></i>Catalogo Auto</a></li>
+              <li><a class="dropdown-item" href="ferrari_purchase_requirements.html" data-i18n="nav_requisiti"><i class="fa-solid fa-shield-halved me-2"></i>Requisiti d'Acquisto</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#prestaciones" data-i18n="nav_specs">Prestazioni</a></li>
+          <li class="nav-item"><a class="nav-link" href="#evaluacion" data-i18n="nav_contact">VIP Evaluation</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-1">
+          <button class="lang-btn active" onclick="setLanguage('es')">ES</button>
+          <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+          <button class="lang-btn" onclick="setLanguage('it')">IT</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section" style="background: linear-gradient(180deg, rgba(11,11,11,0.6) 0%, rgba(11,11,11,1) 100%), url('img/296speciale.png') center/cover no-repeat;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000">
+          <div class="text-uppercase text-danger fw-bold mb-2 tracking-widest" style="font-size: 0.85rem;" data-i18n="hero_badge_296s">Serie Speciale / Track Focused</div>
+          <h1 class="hero-title text-white mb-3" data-i18n="hero_title_296s">FERRARI 296 SPECIALE</h1>
+          <p class="hero-subtitle mb-4" data-i18n="hero_subtitle_296s">La máxima evolución orientada a circuito de la berlinetta híbrida V6. Menos peso, mayor carga aerodinámica y prestaciones llevadas al límite absoluto.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#evaluacion" class="btn btn-ferrari-red" data-i18n="hero_btn_eval">Solicitar Asignación VIP</a>
+            <a href="#prestaciones" class="btn btn-outline-light px-4 py-2 d-inline-flex align-items-center fs-7" style="border-radius: 2px;" data-i18n="hero_btn_specs">Ver Especificaciones</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="prestaciones" class="py-5 bg-black border-bottom border-secondary">
+    <div class="container py-3">
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="spec-card">
+            <div class="spec-value">880 CV</div>
+            <div class="spec-label" data-i18n="spec_power_296s">Potencia Máxima</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="spec-card">
+            <div class="spec-value">2.3 s</div>
+            <div class="spec-label" data-i18n="spec_acc_296s">0 - 100 km/h</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="spec-card">
+            <div class="spec-value">335 km/h</div>
+            <div class="spec-label" data-i18n="spec_speed_296s">Velocidad Máx</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="spec-card">
+            <div class="spec-value">-70 kg</div>
+            <div class="spec-label" data-i18n="spec_weight_296s">Reducción de Peso</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 my-4">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h6 class="text-danger fw-bold text-uppercase tracking-widest" data-i18n="tech_subtitle_296s">Ingeniería de Competición</h6>
+        <h2 class="text-white fw-bold display-6" data-i18n="tech_title_296s">Diseñada para el Cronómetro</h2>
+        <div class="bg-danger mx-auto mt-3" style="width: 50px; height: 2px;"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="req-card">
+            <div class="icon-box"><i class="fa-solid fa-weight-scale"></i></div>
+            <h4 class="text-white h5 mb-3" data-i18n="f1_title_296s">Aligeramiento Extremo</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="f1_desc_296s">Uso extensivo de fibra de carbono expuesta y componentes minimalistas para recortar cada kilogramo superfluo.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="req-card">
+            <div class="icon-box"><i class="fa-solid fa-wind"></i></div>
+            <h4 class="text-white h5 mb-3" data-i18n="f2_title_296s">Aerodinámica Activa Avanzada</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="f2_desc_296s">Parachoques delanteros rediseñados y difusor trasero sobredimensionado para incrementar drásticamente el agarre en curvas rápidas.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="req-card">
+            <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
+            <h4 class="text-white h5 mb-3" data-i18n="f3_title_296s">Gestión de Potencia</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="f3_desc_296s">Calibración específica del sistema híbrido para ofrecer una respuesta de aceleración instantánea adaptada al uso en pista.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="evaluacion" class="py-5 bg-dark border-top border-bottom border-secondary">
+    <div class="container py-4">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8" data-aos="zoom-in">
+          <div class="text-center mb-4">
+            <h6 class="text-danger fw-bold text-uppercase tracking-widest" data-i18n="form_subtitle_296s">Atención Exclusiva</h6>
+            <h2 class="text-white fw-bold display-6" data-i18n="form_title_296s">Solicitar Asignación 296 Speciale</h2>
+            <p class="text-muted small" data-i18n="form_desc_296s">Complete sus datos para solicitar acceso a esta serie especial limitada.</p>
+          </div>
+          <form onsubmit="event.preventDefault(); alert('Solicitud para 296 Speciale enviada con éxito.');">
+            <div class="row g-3">
+              <div class="col-md-6"><input type="text" class="form-control" placeholder="Nombre completo" required></div>
+              <div class="col-md-6"><input type="email" class="form-control" placeholder="Correo electrónico" required></div>
+              <div class="col-md-6"><input type="tel" class="form-control" placeholder="Teléfono de contacto" required></div>
+              <div class="col-md-6">
+                <select class="form-select" required>
+                  <option selected value="296 Speciale">Ferrari 296 Speciale</option>
+                </select>
+              </div>
+              <div class="col-12"><textarea class="form-control" rows="4" placeholder="Comentarios adicionales..."></textarea></div>
+              <div class="col-12 text-center mt-4"><button type="submit" class="btn btn-ferrari-red px-5" data-i18n="form_btn_296s">Enviar Solicitud VIP</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container text-center">
+      <p class="small mb-0">&copy; 2026 Ferrari S.p.A. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    const translations = {
+      it: {
+        nav_home: "Home", nav_modelli: "Modelli", nav_catalogo: "Catalogo Auto", nav_requisiti: "Requisiti d'Acquisto", nav_specs: "Prestazioni", nav_contact: "Valutazione VIP",
+        hero_badge_296s: "Serie Speciale / Track Focused", hero_title_296s: "FERRARI 296 SPECIALE", hero_subtitle_296s: "La massima evoluzione orientata alla pista della berlinetta ibrida V6. Meno peso, maggiore carico aerodinamico e prestazioni spinte al limite assoluto.",
+        hero_btn_eval: "Richiedi Assegnazione VIP", hero_btn_specs: "Specifiche Tecniche",
+        spec_power_296s: "Potenza Massima", spec_acc_296s: "0 - 100 km/h", spec_speed_296s: "Velocità Max", spec_weight_296s: "Riduzione di Peso",
+        tech_subtitle_296s: "Ingegneria da Competizione", tech_title_296s: "Progettata per il Cronometro",
+        f1_title_296s: "Alleggerimento Estremo", f1_desc_296s: "Uso estensivo di fibra di carbonio a vista e componenti minimalisti per tagliare ogni chilogrammo superfluo.",
+        f2_title_296s: "Aerodinamica Attiva Avanzata", f2_desc_296s: "Paraurti anteriori ridisegnati e diffusore posteriore maggiorato per aumentare drasticamente il grip nelle curve veloci.",
+        f3_title_296s: "Gestione della Potenza", f3_desc_296s: "Calibrazione specifica del sistema ibrido per offrire una risposta di accelerazione istantanea adattata all'uso in pista.",
+        form_subtitle_296s: "Assistenza Esclusiva", form_title_296s: "Richiedi Assegnazione 296 Speciale", form_desc_296s: "Compila i tuoi dati per richiedere l'accesso a questa serie speciale limitata.", form_btn_296s: "Invia Richiesta VIP"
+      },
+      en: {
+        nav_home: "Home", nav_modelli: "Models", nav_catalogo: "Car Catalog", nav_requisiti: "Purchase Requirements", nav_specs: "Performance", nav_contact: "VIP Evaluation",
+        hero_badge_296s: "Special Series / Track Focused", hero_title_296s: "FERRARI 296 SPECIALE", hero_subtitle_296s: "The ultimate track-focused evolution of the V6 hybrid berlinetta. Less weight, higher downforce, and performance pushed to the absolute limit.",
+        hero_btn_eval: "Request VIP Allocation", hero_btn_specs: "View Specifications",
+        spec_power_296s: "Max Power", spec_acc_296s: "0 - 100 km/h", spec_speed_296s: "Top Speed", spec_weight_296s: "Weight Reduction",
+        tech_subtitle_296s: "Racing Engineering", tech_title_296s: "Designed for the Stopwatch",
+        f1_title_296s: "Extreme Lightness", f1_desc_296s: "Extensive use of exposed carbon fiber and minimalist components to trim every superfluous kilogram.",
+        f2_title_296s: "Advanced Active Aerodynamics", f2_desc_296s: "Redesigned front bumpers and oversized rear diffuser to drastically increase grip in fast corners.",
+        f3_title_296s: "Power Management", f3_desc_296s: "Specific calibration of the hybrid system to deliver instant acceleration response tailored for track use.",
+        form_subtitle_296s: "Exclusive Attention", form_title_296s: "Request 296 Speciale Allocation", form_desc_s: "Complete your details to request access to this limited special series.", form_btn_296s: "Submit VIP Request"
+      },
+      es: {
+        nav_home: "Home", nav_modelli: "Modelli", nav_catalogo: "Catalogo Auto", nav_requisiti: "Requisiti d'Acquisto", nav_specs: "Prestazioni", nav_contact: "VIP Evaluation",
+        hero_badge_296s: "Serie Speciale / Track Focused", hero_title_296s: "FERRARI 296 SPECIALE", hero_subtitle_296s: "La máxima evolución orientada a circuito de la berlinetta híbrida V6. Menos peso, mayor carga aerodinámica y prestaciones llevadas al límite absoluto.",
+        hero_btn_eval: "Solicitar Asignación VIP", hero_btn_specs: "Ver Especificaciones",
+        spec_power_296s: "Potencia Máxima", spec_acc_296s: "0 - 100 km/h", spec_speed_296s: "Velocidad Máx", spec_weight_296s: "Reducción de Peso",
+        tech_subtitle_296s: "Ingeniería de Competición", tech_title_296s: "Diseñada para el Cronómetro",
+        f1_title_296s: "Aligeramiento Extremo", f1_desc_296s: "Uso extensivo de fibra de carbono expuesta y componentes minimalistas para recortar cada kilogramo superfluo.",
+        f2_title_296s: "Aerodinámica Activa Avanzada", f2_desc_296s: "Parachoques delanteros rediseñados y difusor trasero sobredimensionado para incrementar drásticamente el agarre en curvas rápidas.",
+        f3_title_296s: "Gestión de Potencia", f3_desc_296s: "Calibración específica del sistema híbrido para ofrecer una respuesta de aceleración instantánea adaptada al uso en pista.",
+        form_subtitle_296s: "Atención Exclusiva", form_title_296s: "Solicitar Asignación 296 Speciale", form_desc_296s: "Complete sus datos para solicitar acceso a esta serie especial limitada.", form_btn_296s: "Enviar Solicitud VIP"
+      }
+    };
+    function setLanguage(lang) {
+      if (!translations[lang]) return;
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.innerText.toLowerCase() === lang) btn.classList.add('active');
+      });
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang][key]) element.innerText = translations[lang][key];
+      });
+      document.documentElement.lang = lang;
+    }
+  </script>
+</body>
+</html>

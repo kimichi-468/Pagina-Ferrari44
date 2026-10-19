@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Requisitos de Compra | Official Ferrari Dealership</title>
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Google Fonts: Inter & Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ferrari-requierements.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-ferrari fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <!-- Ferrari Logo SVG / SVG Outline -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="42" viewBox="0 0 100 130" fill="#FF0000" class="me-2">
+          <path d="M10,5 L90,5 L90,125 L10,125 Z" fill="none" stroke="#D40000" stroke-width="3"/>
+          <text x="50%" y="60%" font-size="28" font-family="Montserrat" font-weight="900" fill="#ffffff" text-anchor="middle">SF</text>
+        </svg>
+        <span class="text-white font-heading fw-bold fs-5 tracking-wider ms-1">FERRARI</span>
+      </a>
+
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFerrari">
+        <i class="fa-solid fa-bars fs-4"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarFerrari">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" data-i18n="nav_home">Home</a>
+          </li>
+          
+          <!-- Dropdown Modelli -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="modelliDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav_modelli">
+              Modelli
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="modelliDropdown">
+              <li><a class="dropdown-item" href="catalogo.html" data-i18n="nav_catalogo"><i class="fa-solid fa-car me-2"></i>Catalogo Auto</a></li>
+              
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#faq" data-i18n="nav_faq">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#evaluacion" data-i18n="nav_contact">VIP Evaluation</a>
+          </li>
+        </ul>
+
+        <!-- Language Switcher -->
+        <div class="d-flex align-items-center gap-1">
+          <button class="lang-btn active" onclick="setLanguage('es')">ES</button>
+          <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+          <button class="lang-btn" onclick="setLanguage('it')">IT</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section text-center text-lg-start">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000">
+          <div class="text-uppercase text-danger fw-bold mb-2 tracking-widest" style="font-size: 0.8rem;" data-i18n="hero_badge">
+            Official Ownership Protocol
+          </div>
+          <h1 class="hero-title text-white mb-4" data-i18n="hero_title">
+            Requisitos y Protocolo de Adquisición
+          </h1>
+          <p class="hero-subtitle mb-4" data-i18n="hero_subtitle">
+            Ser propietario de un Ferrari no es solo una compra, es la incorporación a una comunidad privilegiada. Conozca los estándares de elegibilidad y privacidad para la adquisición de nuestras obras de arte automotrices.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#requisitos" class="btn btn-ferrari-red" data-i18n="hero_btn_req">Ver Requisitos</a>
+            <a href="#evaluacion" class="btn btn-outline-light px-4 py-2 d-inline-flex align-items-center fs-7" style="border-radius: 2px;" data-i18n="hero_btn_eval">Solicitar Evaluación VIP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- Requisitos Grid Section -->
+  <section id="requisitos" class="py-5 my-4">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h6 class="text-danger fw-bold text-uppercase tracking-widest" data-i18n="req_subtitle">Proceso de Selección</h6>
+        <h2 class="text-white fw-bold display-6" data-i18n="req_title">Criterios Oficiales de Elegibilidad</h2>
+        <div class="bg-danger mx-auto mt-3" style="width: 50px; height: 2px;"></div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Requisito 1 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="req-card">
+            <div class="card-number">01</div>
+            <div class="icon-box">
+              <i class="fa-solid fa-id-card-clip"></i>
+            </div>
+            <h4 class="text-white h5 mb-3" data-i18n="r1_title">Historial y Perfil de Cliente</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="r1_desc">
+              Evaluación previa de la afinidad con la marca. En modelos de producción continua se prioriza la pasión genuina por el automovilismo; para series especiales, se pondera la posesión de modelos Ferrari anteriores.
+            </p>
+          </div>
+        </div>
+
+        <!-- Requisito 2 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="req-card">
+            <div class="card-number">02</div>
+            <div class="icon-box">
+              <i class="fa-solid fa-file-invoice-dollar"></i>
+            </div>
+            <h4 class="text-white h5 mb-3" data-i18n="r2_title">Verificación de Solvencia</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="r2_desc">
+              Cumplimiento estricto con las regulaciones internacionales KYC (Know Your Customer) y AML (Anti-Money Laundering). Proceso confidencial de validación de origen de fondos mediante entidades bancarias certifcadas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Requisito 3 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="req-card">
+            <div class="card-number">03</div>
+            <div class="icon-box">
+              <i class="fa-solid fa-crown"></i>
+            </div>
+            <h4 class="text-white h5 mb-3" data-i18n="r3_title">Asignación de Ediciones Limitadas</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="r3_desc">
+              Modelos como el Ferrari F80 y Series Especiales están reservados exclusivamente por invitación directa de Maranello, basados en el estatus del coleccionista en el registro oficial della Scuderia.
+            </p>
+          </div>
+        </div>
+
+        <!-- Requisito 4 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="req-card">
+            <div class="card-number">04</div>
+            <div class="icon-box">
+              <i class="fa-solid fa-handshake-simple"></i>
+            </div>
+            <h4 class="text-white h5 mb-3" data-i18n="r4_title">Acuerdo Anti-Especulación</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="r4_desc">
+              Cláusula de derecho de primera negativa (Right of First Refusal). Los compradores acuerdan no revender el vehículo durante un período de 12 a 24 meses sin ofrecerlo primero a la concesionaria oficial.
+            </p>
+          </div>
+        </div>
+
+        <!-- Requisito 5 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="req-card">
+            <div class="card-number">05</div>
+            <div class="icon-box">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <h4 class="text-white h5 mb-3" data-i18n="r5_title">Reserva y Tailor Made</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="r5_desc">
+              Depósito de garantía reembolsable para la apertura del pedido de fábrica. Acceso al Atelier de personalización o al programa exclusivo Tailor Made para la especificación del vehículo.
+            </p>
+          </div>
+        </div>
+
+        <!-- Requisito 6 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="req-card">
+            <div class="card-number">06</div>
+            <div class="icon-box">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <h4 class="text-white h5 mb-3" data-i18n="r6_title">Mantenimiento y Garantía</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="r6_desc">
+              Compromiso de realizar los servicios de mantenimiento preventivo exclusivamente en la red de talleres autorizados Ferrari durante el período cubierto por el programa Genuine Maintenance de 7 años.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Light Contrast Section (Brochure Style) -->
+  <section class="section-light">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <span class="text-danger fw-bold text-uppercase tracking-widest small" data-i18n="light_sub">Experiencia Tailor Made</span>
+          <h2 class="display-6 mt-2 mb-4" data-i18n="light_title">Un Vehículo Tan Único Como Su Propietario</h2>
+          <p class="mb-4" data-i18n="light_desc">
+            Cada Ferrari que sale de Maranello es una obra de arte concebida según los deseos exactos de su dueño. Al cumplir con los requisitos iniciales de adquisición, usted accede a nuestro estudio de personalización en el concesionario.
+          </p>
+          <a href="#" class="btn-ferrari-circle">
+            <span class="circle"><i class="fa-solid fa-chevron-right"></i></span>
+            <span data-i18n="light_link">Conocer el Programa Tailor Made</span>
+          </a>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <img src="img/ferrari La Ferrari.webp" alt="Ferrari Atelier" class="img-fluid rounded shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-5 my-5">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h6 class="text-danger fw-bold text-uppercase tracking-widest" data-i18n="faq_subtitle">Preguntas Frecuentes</h6>
+        <h2 class="text-white fw-bold display-6" data-i18n="faq_title">Resolvemos sus Dudas</h2>
+        <div class="bg-danger mx-auto mt-3" style="width: 50px; height: 2px;"></div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10" data-aos="fade-up">
+          <div class="accordion" id="ferrariFaqAccordion">
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq1Header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1" data-i18n="faq1_q">
+                  ¿Puedo comprar un Ferrari si es mi primera vez con la marca?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1Header" data-bs-parent="#ferrariFaqAccordion">
+                <div class="accordion-body" data-i18n="faq1_a">
+                  Sí. Los modelos de la gama actual (como Roma, 296 GTB o Purosangue) están disponibles para nuevos clientes que cumplan con los procedimientos financieros y de verificación estándar.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq2Header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2" data-i18n="faq2_q">
+                  ¿Cómo puedo acceder a un modelo de Edición Limitada o Hypercar como el F80?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2Header" data-bs-parent="#ferrariFaqAccordion">
+                <div class="accordion-body" data-i18n="faq2_a">
+                  Los modelos hypercar y series especiales son asignados directamente por la fábrica en Maranello a clientes con un historial extenso y comprobado de coleccionismo Ferrari.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq3Header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3" data-i18n="faq3_q">
+                  ¿Cuánto tiempo toma el proceso de entrega de un vehículo pedido a fábrica?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3Header" data-bs-parent="#ferrariFaqAccordion">
+                <div class="accordion-body" data-i18n="faq3_a">
+                  Dependiendo del modelo y el nivel de personalización seleccionado en el atelier, los tiempos de espera varían entre 12 y 24 meses desde la confirmación del pedido.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIP Evaluation Form -->
+  <section id="evaluacion" class="py-5 bg-dark border-top border-bottom border-secondary">
+    <div class="container py-4">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8" data-aos="zoom-in">
+          <div class="text-center mb-4">
+            <h6 class="text-danger fw-bold text-uppercase tracking-widest" data-i18n="form_subtitle">Atención Privada</h6>
+            <h2 class="text-white fw-bold display-6" data-i18n="form_title">Solicitud de Evaluación de Elegibilidad</h2>
+            <p class="text-muted small" data-i18n="form_desc">Un Asesor Comercial Senior se pondrá en contacto con usted de manera estricta y confidencial.</p>
+          </div>
+
+          <form onsubmit="event.preventDefault(); alert('Solicitud enviada con éxito. Nos pondremos en contacto a la brevedad.');">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Nombre completo" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Correo electrónico" required>
+              </div>
+              <div class="col-md-6">
+                <input type="tel" class="form-control" placeholder="Teléfono de contacto" required>
+              </div>
+              <div class="col-md-6">
+                <select class="form-select" required>
+                  <option selected disabled value="" data-i18n="form_select">Modelo de Interés</option>
+                  <!-- SUPERCARS -->
+  <optgroup label="Supercars">
+    <option value="F80">Ferrari F80</option>
+  </optgroup>
+
+  <!-- SPORT & GT / RANGE -->
+  <optgroup label="Sport & GT / Range">
+    <option value="12Cilindri">Ferrari 12Cilindri</option>
+    <option value="12Cilindri Spider">Ferrari 12Cilindri Spider</option>
+    <option value="849 Testarossa">Ferrari 849 Testarossa</option>
+    <option value="849 Testarossa Spider">Ferrari 849 Testarossa Spider</option>
+    <option value="Amalfi">Ferrari Amalfi</option>
+    <option value="Amalfi Spider">Ferrari Amalfi Spider</option>
+    <option value="296 GTB">Ferrari 296 GTB</option>
+    <option value="296 GTS">Ferrari 296 GTS</option>
+    <option value="Purosangue">Ferrari Purosangue</option>
+    <option value="Roma Spider">Ferrari Roma Spider</option>
+  </optgroup>
+
+  <!-- SPECIAL SERIES -->
+  <optgroup label="Serie Speciale">
+    <option value="296 Speciale">Ferrari 296 Speciale</option>
+    <option value="296 Speciale A">Ferrari 296 Speciale A</option>
+    <option value="12Cilindri Manuale">Ferrari 12Cilindri Manuale</option>
+    <option value="SF90 XX Stradale">Ferrari SF90 XX Stradale</option>
+    <option value="SF90 XX Spider">Ferrari SF90 XX Spider</option>
+  </optgroup>
+
+  <!-- ICONA -->
+  <optgroup label="Icona Series">
+    <option value="Daytona SP3">Ferrari Daytona SP3</option>
+    <option value="Monza SP1 / SP2">Ferrari Monza SP1 / SP2</option>
+  </optgroup>
+                </select>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" rows="4" placeholder="Mensaje o comentarios adicionales..."></textarea>
+              </div>
+              <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn btn-ferrari-red px-5" data-i18n="form_btn">Enviar Solicitud VIP</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h6 class="font-heading fw-bold text-white mb-3">OFFICIAL FERRARI DEALERSHIP</h6>
+          <p class="small text-muted mb-3">
+            Concesionaria Oficial Autorizada de Ferrari. Experiencia, exclusividad y pasión por la excelencia automotriz.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="https://www.youtube.com/@Ferrari"><i class="fa-brands fa-youtube fs-5"></i></a>
+            <a href="https://www.instagram.com/ferrari/"><i class="fa-brands fa-instagram fs-5"></i></a>
+            <a href="https://www.tiktok.com/@ferrari"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <h6 class="font-heading fw-bold text-white mb-3" data-i18n="nav_modelli">Modelli</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="pagine.html" data-i18n="nav_catalogo">Catalogo Auto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h6 class="font-heading fw-bold text-white mb-3">SHOWROOM</h6>
+          <p class="small text-muted mb-1"><i class="fa-solid fa-location-dot me-2 text-danger"></i> Av. Principal 1234, Showroom Oficial</p>
+          <p class="small text-muted mb-1"><i class="fa-solid fa-phone me-2 text-danger"></i> +54 11 5555-FERRARI</p>
+          <p class="small text-muted"><i class="fa-solid fa-envelope me-2 text-danger"></i> vip@ferrari-dealership.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p class="small mb-0">&copy; 2026 Ferrari S.p.A. Todos los derechos reservados. El nombre y el logotipo de Ferrari son marcas registradas de Ferrari S.p.A.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: Bootstrap JS, AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    // Initialize AOS animations
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
+    // Translation Dictionary (ES, EN, IT)
+    const translations = {
+      it: {
+        nav_home: "Home",
+        nav_modelli: "Modelli",
+        nav_catalogo: "Catalogo Auto",
+        nav_requisiti: "Requisiti d'Acquisto",
+        nav_approved: "Ferrari Approved",
+        nav_faq: "FAQ",
+        nav_contact: "Valutazione VIP",
+        hero_badge: "Protocollo Ufficiale di Proprietà",
+        hero_title: "Requisiti e Protocollo d'Acquisto",
+        hero_subtitle: "Possedere una Ferrari non è un semplice acquisto, ma l'ingresso in una comunità esclusiva. Scopri i criteri di idoneità per accedere alle nostre opere d'arte automobilistiche.",
+        hero_btn_req: "Vedi Requisiti",
+        hero_btn_eval: "Richiedi Valutazione VIP",
+        req_subtitle: "Processo di Selezione",
+        req_title: "Criteri Ufficiali di Idoneità",
+        r1_title: "Profilo e Storico Cliente",
+        r1_desc: "Valutazione dell'affinità con il marchio. I modelli di serie danno priorità alla passione autentica; le serie speciali allo storico di possesso di modelli Ferrari.",
+        r2_title: "Verifica Finanziaria e Solvibilità",
+        r2_desc: "Rigoroso rispetto delle normative internazionali KYC e AML. Verifica riservata della provenienza dei fondi tramite istituti bancari certificati.",
+        r3_title: "Edizioni Limitate e Hypercar",
+        r3_desc: "Modelli come la Ferrari F80 e le Serie Speciali sono riservati esclusivamente su invito da Maranello in base al registro ufficiale dei collezionisti.",
+        r4_title: "Accordo Anti-Especulazione",
+        r4_desc: "Clausola di diritto di prima ricusazione (Right of First Refusal). Impegno a non rivendere la vettura per un periodo stabilito senza offrirla prima alla rete ufficiale.",
+        r5_title: "Deposito di Garanzia e Tailor Made",
+        r5_desc: "Deposito cauzionale rimborsabile per l'apertura dell'ordine in fabbrica. Accesso all'Atelier di personalizzazione esclusiva.",
+        r6_title: "Manutenzione e Garanzia",
+        r6_desc: "Impegno ad eseguire la manutenzione ordinaria esclusivamente presso la rete ufficiale Ferrari coperta dal programma 7-Year Genuine Maintenance.",
+        light_sub: "Esperienza Tailor Made",
+        light_title: "Un 'Automobile Unica Come Il Suo Proprietario",
+        light_desc: "Ogni Ferrari che lascia Maranello è un capolavoro su misura. Soddisfatti i requisiti di idoneità, si accede allo studio di personalizzazione nel nostro showroom.",
+        light_link: "Scopri il Programma Tailor Made",
+        faq_subtitle: "Domande Frequenti",
+        faq_title: "Rispondiamo ai Tuoi Dubbi",
+        faq1_q: "Posso acquistare una Ferrari se è la mia prima volta con il marchio?",
+        faq1_a: "Sì. I modelli della gamma attuale (come Roma, 296 GTB o Purosangue) sono disponibili per i nuovi clienti previa verifica finanziaria.",
+        faq2_q: "Come posso accedere a un modello in Edizione Limitata come la F80?",
+        faq2_a: "Le Hypercar e le serie speciali sono assegnate direttamente da Maranello ai clienti con un ampio storico di collezionismo Ferrari.",
+        faq3_q: "Quanto tempo richiede la consegna di un ordine su misura?",
+        faq3_a: "A seconda del modello e del livello di personalizzazione nell'Atelier, i tempi variano tra i 12 e i 24 mesi.",
+        form_subtitle: "Consulenza Riservata",
+        form_title: "Richiesta di Valutazione di Idoneità",
+        form_desc: "Un Senior Sales Executive la contatterà con la massima riservatezza.",
+        form_select: "Modello di Interesse",
+        form_btn: "Invia Richiesta VIP"
+      },
+      en: {
+        nav_home: "Home",
+        nav_modelli: "Models",
+        nav_catalogo: "Car Catalog",
+        nav_requisiti: "Purchase Requirements",
+        nav_approved: "Ferrari Approved",
+        nav_faq: "FAQ",
+        nav_contact: "VIP Evaluation",
+        hero_badge: "Official Ownership Protocol",
+        hero_title: "Acquisition Requirements & Protocol",
+        hero_subtitle: "Owning a Ferrari is not merely a purchase; it is joining an exclusive community. Discover the eligibility criteria to acquire our automotive masterpieces.",
+        hero_btn_req: "View Requirements",
+        hero_btn_eval: "Request VIP Evaluation",
+        req_subtitle: "Selection Process",
+        req_title: "Official Eligibility Criteria",
+        r1_title: "Customer Profile & History",
+        r1_desc: "Assessment of brand affinity. Standard production models prioritize genuine passion; special series factor in ownership history of previous Ferrari models.",
+        r2_title: "Financial Verification",
+        r2_desc: "Strict compliance with international KYC and AML regulations. Confidential verification of funds through accredited banking institutions.",
+        r3_title: "Limited Editions & Hypercars",
+        r3_desc: "Models like the Ferrari F80 and Special Series are strictly by invitation only from Maranello based on the official Scuderia collector registry.",
+        r4_title: "Anti-Speculation Agreement",
+        r4_desc: "Right of First Refusal clause. Agreement not to resell the vehicle for a designated period without offering it back to the official dealer network first.",
+        r5_title: "Security Deposit & Tailor Made",
+        r5_desc: "Refundable deposit to initiate factory order. Exclusive access to the customization Atelier or Tailor Made program.",
+        r6_title: "Maintenance & Warranty",
+        r6_desc: "Commitment to execute routine maintenance exclusively with official Ferrari authorized service centers under the 7-Year Genuine Maintenance program.",
+        light_sub: "Tailor Made Experience",
+        light_title: "A Vehicle As Unique As Its Owner",
+        light_desc: "Every Ferrari leaving Maranello is a bespoke masterpiece built to its owner's exact desires. Upon fulfilling eligibility requirements, you gain entrance to our Atelier studio.",
+        light_link: "Explore Tailor Made Program",
+        faq_subtitle: "Frequently Asked Questions",
+        faq_title: "Answering Your Inquiries",
+        faq1_q: "Can I buy a Ferrari if it's my first time with the brand?",
+        faq1_a: "Yes. Regular production models (such as Roma, 296 GTB, or Purosangue) are available to new clients meeting standard financial verification.",
+        faq2_q: "How can I access a Limited Edition model or Hypercar like the F80?",
+        faq2_a: "Hypercars and special series are directly allocated by Maranello to clients with a verified and extensive Ferrari collection history.",
+        faq3_q: "What is the delivery timeline for a factory custom order?",
+        faq3_a: "Depending on the model and degree of personalization in the Atelier, wait times range between 12 and 24 months.",
+        form_subtitle: "Private Consultation",
+        form_title: "Eligibility Evaluation Request",
+        form_desc: "A Senior Sales Executive will reach out in strict confidence.",
+        form_select: "Model of Interest",
+        form_btn: "Submit VIP Request"
+      },
+      es: {
+        nav_home: "Home",
+        nav_modelli: "Modelli",
+        nav_catalogo: "Catalogo Auto",
+        nav_requisiti: "Requisiti d'Acquisto",
+        nav_approved: "Ferrari Approved",
+        nav_faq: "FAQ",
+        nav_contact: "Evaluación VIP",
+        hero_badge: "Protocolo Oficial de Propiedad",
+        hero_title: "Requisitos y Protocolo de Adquisición",
+        hero_subtitle: "Ser propietario de un Ferrari no es solo una compra, es la incorporación a una comunidad字符 exclusiva. Conozca los estándares de elegibilidad para nuestras obras de arte automotrices.",
+        hero_btn_req: "Ver Requisitos",
+        hero_btn_eval: "Solicitar Evaluación VIP",
+        req_subtitle: "Proceso de Selección",
+        req_title: "Criterios Oficiales de Elegibilidad",
+        r1_title: "Historial y Perfil de Cliente",
+        r1_desc: "Evaluación previa de la afinidad con la marca. En modelos de producción continua se prioriza la pasión genuina; en series especiales, la posesión de modelos Ferrari anteriores.",
+        r2_title: "Verificación de Solvencia",
+        r2_desc: "Cumplimiento estricto con las regulaciones internacionales KYC y AML. Proceso confidencial de validación de origen de fondos mediante entidades bancarias.",
+        r3_title: "Ediciones Limitadas y Hypercars",
+        r3_desc: "Modelos como el Ferrari F80 y Series Especiales están reservados exclusivamente por invitación directa de Maranello según el registro oficial de la Scuderia.",
+        r4_title: "Acuerdo Anti-Especulación",
+        r4_desc: "Cláusula de derecho de primera negativa (Right of First Refusal). Acuerdos para no revender el vehículo durante un período determinado sin ofrecerlo primero a la red oficial.",
+        r5_title: "Reserva y Tailor Made",
+        r5_desc: "Depósito de garantía reembolsable para la apertura del pedido de fábrica. Acceso al Atelier de personalización exclusivo.",
+        r6_title: "Mantenimiento y Garantía",
+        r6_desc: "Compromiso de mantenimiento preventivo exclusivo en la red oficial Ferrari durante el programa Genuine Maintenance de 7 años.",
+        light_sub: "Experiencia Tailor Made",
+        light_title: "Un Vehículo Tan Único Como Su Propietario",
+        light_desc: "Cada Ferrari que sale de Maranello es una obra de arte concebida según los deseos exactos de su dueño. Al cumplir con los requisitos iniciales, accede a nuestro estudio de personalización.",
+        light_link: "Conocer Programa Tailor Made",
+        faq_subtitle: "Preguntas Frecuentes",
+        faq_title: "Resolvemos sus Dudas",
+        faq1_q: "¿Puedo comprar un Ferrari si es mi primera vez con la marca?",
+        faq1_a: "Sí. Los modelos de la gama actual (como Roma, 296 GTB o Purosangue) están disponibles para nuevos clientes que cumplan con las verificaciones estándar.",
+        faq2_q: "¿Cómo puedo acceder a un modelo de Edición Limitada como el F80?",
+        faq2_a: "Los modelos hypercar y series especiales son asignados directamente por la fábrica a clientes con un historial extenso y comprobado de coleccionismo Ferrari.",
+        faq3_q: "¿Cuánto tiempo toma la entrega de un pedido a fábrica?",
+        faq3_a: "Dependiendo del modelo y el nivel de personalización seleccionado en el atelier, varía entre 12 y 24 meses.",
+        form_subtitle: "Atención Privada",
+        form_title: "Solicitud de Evaluación de Elegibilidad",
+        form_desc: "Un Asesor Comercial Senior se pondrá en contacto de manera estricta y confidencial.",
+        form_select: "Modelo de Interés",
+        form_btn: "Enviar Solicitud VIP"
+      }
+    };
+
+    // Language switcher function
+    function setLanguage(lang) {
+      if (!translations[lang]) return;
+
+      // Update interactive buttons active class
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.innerText.toLowerCase() === lang) {
+          btn.classList.add('active');
+        }
+      });
+
+      // Change text of elements with data-i18n
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+          element.innerText = translations[lang][key];
+        }
+      });
+
+      // Update HTML lang attribute
+      document.documentElement.lang = lang;
+    }
+  </script>
+</body>
+</html>
+
+
+
+  

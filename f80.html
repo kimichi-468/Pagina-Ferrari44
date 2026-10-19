@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrari F80 | Supercar Icon - Official Ferrari Dealership</title>
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Google Fonts: Inter & Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="autos.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-ferrari fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="pagine.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="42" viewBox="0 0 100 130" fill="#FF0000" class="me-2">
+          <path d="M10,5 L90,5 L90,125 L10,125 Z" fill="none" stroke="#D40000" stroke-width="3"/>
+          <text x="50%" y="60%" font-size="28" font-family="Montserrat" font-weight="900" fill="#ffffff" text-anchor="middle">SF</text>
+        </svg>
+        <span class="text-white font-heading fw-bold fs-5 tracking-wider ms-1">FERRARI</span>
+      </a>
+
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFerrari">
+        <i class="fa-solid fa-bars fs-4"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarFerrari">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="prueba.html" data-i18n="nav_home">Home</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="modelliDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav_modelli">
+              Modelli
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="modelliDropdown">
+              <li><a class="dropdown-item" href="pagine.html" data-i18n="nav_catalogo"><i class="fa-solid fa-car me-2"></i>Catalogo Auto</a></li>
+              <li><a class="dropdown-item" href="ferrari_purchase_requirements.html" data-i18n="nav_requisiti"><i class="fa-solid fa-shield-halved me-2"></i>Requisiti d'Acquisto</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#prestaciones" data-i18n="nav_specs">Prestazioni</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#evaluacion" data-i18n="nav_contact">VIP Evaluation</a>
+          </li>
+        </ul>
+
+        <!-- Language Switcher -->
+        <div class="d-flex align-items-center gap-1">
+          <button class="lang-btn active" onclick="setLanguage('es')">ES</button>
+          <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+          <button class="lang-btn" onclick="setLanguage('it')">IT</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section F80 -->
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000">
+          <div class="text-uppercase text-danger fw-bold mb-2 tracking-widest" style="font-size: 0.85rem;" data-i18n="hero_badge">
+            Supercars / Limited Edition
+          </div>
+          <h1 class="hero-title text-white mb-3" data-i18n="hero_title">
+            FERRARI F80
+          </h1>
+          <p class="hero-subtitle mb-4" data-i18n="hero_subtitle">
+            El cénit del rendimiento automotriz. Un superdeportivo concebido para redefinir los límites de la tecnología híbrida V6 y la aerodinámica derivada de la Fórmula 1 y las 24 Horas de Le Mans.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#evaluacion" class="btn btn-ferrari-red" data-i18n="hero_btn_eval">Solicitar Asignación VIP</a>
+            <a href="#prestaciones" class="btn btn-outline-light px-4 py-2 d-inline-flex align-items-center fs-7" style="border-radius: 2px;" data-i18n="hero_btn_specs">Ver Especificaciones</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Spec Highlights Grid -->
+  <section id="prestaciones" class="py-5 bg-black border-bottom border-secondary">
+    <div class="container py-3">
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="spec-card">
+            <div class="spec-value">1200 CV</div>
+            <div class="spec-label" data-i18n="spec_power">Potencia Máxima</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="spec-card">
+            <div class="spec-value">2.15 s</div>
+            <div class="spec-label" data-i18n="spec_acc">0 - 100 km/h</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="spec-card">
+            <div class="spec-value">350 km/h</div>
+            <div class="spec-label" data-i18n="spec_speed">Velocidad Máx</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="spec-card">
+            <div class="spec-value">1200 kg</div>
+            <div class="spec-label" data-i18n="spec_downforce">Carga Aerodinámica</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech & Features Grid -->
+  <section class="py-5 my-4">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h6 class="text-danger fw-bold text-uppercase tracking-widest" data-i18n="tech_subtitle">Innovación de Maranello</h6>
+        <h2 class="text-white fw-bold display-6" data-i18n="tech_title">Arquitectura de Leyenda</h2>
+        <div class="bg-danger mx-auto mt-3" style="width: 50px; height: 2px;"></div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Feature 1 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="req-card">
+            <div class="icon-box">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <h4 class="text-white h5 mb-3" data-i18n="f1_title">Motor Híbrido V6 E-Turbo</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="f1_desc">
+              Propulsor V6 a 120° de 3.0 litros combinado con 3 motores eléctricos y tecnología e-turbo heredada directamente del monoplaza de Fórmula 1 y el 499P de Le Mans.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="req-card">
+            <div class="icon-box">
+              <i class="fa-solid fa-wind"></i>
+            </div>
+            <h4 class="text-white h5 mb-3" data-i18n="f2_title">Aerodinámica Activa 1+</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="f2_desc">
+              Sistemas de carga aerodinámica adaptable con ala trasera activa, difusor triplano extremo y canal de flujo de aire que generan 1.200 kg de carga a 250 km/h.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="req-card">
+            <div class="icon-box">
+              <i class="fa-solid fa-shield-cat"></i>
+            </div>
+            <h4 class="text-white h5 mb-3" data-i18n="f3_title">Chasis Multi-Material</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="f3_desc">
+              Estructura celda monocasco fabricada íntegramente en fibra de carbono preimpregnada con subchasis de aluminio para máxima rigidez torsional y reducción de peso.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- VIP Evaluation / Allocation Form -->
+  <section id="evaluacion" class="py-5 bg-dark border-top border-bottom border-secondary">
+    <div class="container py-4">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8" data-aos="zoom-in">
+          <div class="text-center mb-4">
+            <h6 class="text-danger fw-bold text-uppercase tracking-widest" data-i18n="form_subtitle">Solicitud Privada</h6>
+            <h2 class="text-white fw-bold display-6" data-i18n="form_title">Solicitar Asignación F80</h2>
+            <p class="text-muted small" data-i18n="form_desc">Debido a la producción limitada del Ferrari F80, las asignaciones requieren validación del historial del coleccionista.</p>
+          </div>
+
+          <form onsubmit="event.preventDefault(); alert('Solicitud de asignación para Ferrari F80 enviada con éxito. Un representante oficial se pondrá en contacto.');">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Nombre completo" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Correo electrónico" required>
+              </div>
+              <div class="col-md-6">
+                <input type="tel" class="form-control" placeholder="Teléfono de contacto" required>
+              </div>
+              <div class="col-md-6">
+                <select class="form-select" required>
+                  <option selected value="F80">Ferrari F80</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" rows="4" placeholder="Indique sus modelos Ferrari anteriores o comentarios adicionales..."></textarea>
+              </div>
+              <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn btn-ferrari-red px-5" data-i18n="form_btn">Enviar Solicitud VIP</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+ <footer>
+    <div class="container text-center">
+      <p class="small mb-0">&copy; 2026 Ferrari S.p.A. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts: Bootstrap JS, AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    // Initialize AOS animations
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
+    // Translation Dictionary (ES, EN, IT)
+    const translations = {
+      it: {
+        nav_home: "Home",
+        nav_modelli: "Modelli",
+        nav_catalogo: "Catalogo Auto",
+        nav_requisiti: "Requisiti d'Acquisto",
+        nav_approved: "Ferrari Approved",
+        nav_specs: "Prestazioni",
+        nav_contact: "Valutazione VIP",
+        hero_badge: "Supercars / Edizione Limitata",
+        hero_title: "FERRARI F80",
+        hero_subtitle: "Il punto più alto delle prestazioni automobilistiche. Una supercar ideata per ridefinire i limiti della tecnologia ibrida V6 e dell'aerodinamica di derivazione Formula 1 e Le Mans.",
+        hero_btn_eval: "Richiedi Assegnazione VIP",
+        hero_btn_specs: "Specifiche Tecniche",
+        spec_power: "Potenza Massima",
+        spec_acc: "0 - 100 km/h",
+        spec_speed: "Velocità Max",
+        spec_downforce: "Carico Aerodinamico",
+        tech_subtitle: "Innovazione di Maranello",
+        tech_title: "Architettura di una Leggenda",
+        f1_title: "Motore Ibrido V6 E-Turbo",
+        f1_desc: "Propulsore V6 a 120° di 3.0 litri abbinato a 3 motori elettrici e tecnologia e-turbo ereditata direttamente dalla F1 e dalla 499P di Le Mans.",
+        f2_title: "Aerodinamica Attiva 1+",
+        f2_desc: "Sistemi di carico aerodinamico adattivo con ala posteriore attiva e diffusore che generano 1.200 kg di carico a 250 km/h.",
+        f3_title: "Telaio Multi-Materiale",
+        f3_desc: "Monococca in fibra di carbonio preimpregnata con sottotelaio in alluminio per la massima rigidità torsionale e riduzione del peso.",
+        light_sub: "Cockpit 1+ Layout",
+        light_title: "Progettata Intorno Al Pilota",
+        light_desc: "L'interno adotta un'incredibile configurazione '1+', incentrata esclusivamente sulla posizione del guidatore con dettagli in carbonio e finiture Ferrari.",
+        light_link: "Vedi Protocollo d'Acquisto",
+        form_subtitle: "Richiesta Riservata",
+        form_title: "Richiedi Assegnazione F80",
+        form_desc: "A causa della produzione limitata della Ferrari F80, l'assegnazione richiede la verifica dello storico cliente.",
+        form_btn: "Invia Richiesta VIP"
+      },
+      en: {
+        nav_home: "Home",
+        nav_modelli: "Models",
+        nav_catalogo: "Car Catalog",
+        nav_requisiti: "Purchase Requirements",
+        nav_approved: "Ferrari Approved",
+        nav_specs: "Performance",
+        nav_contact: "VIP Evaluation",
+        hero_badge: "Supercars / Limited Edition",
+        hero_title: "FERRARI F80",
+        hero_subtitle: "The pinnacle of automotive performance. A supercar conceived to redefine the limits of V6 hybrid technology and aerodynamics derived from Formula 1 and Le Mans.",
+        hero_btn_eval: "Request VIP Allocation",
+        hero_btn_specs: "View Specifications",
+        spec_power: "Max Power",
+        spec_acc: "0 - 100 km/h",
+        spec_speed: "Top Speed",
+        spec_downforce: "Downforce",
+        tech_subtitle: "Maranello Innovation",
+        tech_title: "Legendary Architecture",
+        f1_title: "V6 E-Turbo Hybrid Engine",
+        f1_desc: "3.0-liter 120° V6 powertrain combined with 3 electric motors and e-turbo technology inherited directly from F1 and the 499P Le Mans winner.",
+        f2_title: "1+ Active Aerodynamics",
+        f2_desc: "Adaptive downforce systems featuring active rear wing and triplane diffuser generating 1,200 kg of downforce at 250 km/h.",
+        f3_title: "Multi-Material Chassis",
+        f3_desc: "Full pre-preg carbon fiber monocoque tub with aluminum subframes for ultimate torsional rigidity and extreme weight reduction.",
+        light_sub: "Cockpit 1+ Layout",
+        light_title: "Designed Around The Driver",
+        light_desc: "The interior features a revolutionary '1+' seating layout focused purely on the driver position with ultra-light carbon materials and iconic Ferrari styling.",
+        light_link: "View Ownership Protocol",
+        form_subtitle: "Private Application",
+        form_title: "Request F80 Allocation",
+        form_desc: "Due to limited production of the Ferrari F80, allocations require collector status verification.",
+        form_btn: "Submit VIP Request"
+      },
+      es: {
+        nav_home: "Home",
+        nav_modelli: "Modelli",
+        nav_catalogo: "Catalogo Auto",
+        nav_requisiti: "Requisiti d'Acquisto",
+        nav_approved: "Ferrari Approved",
+        nav_specs: "Prestaciones",
+        nav_contact: "Evaluación VIP",
+        hero_badge: "Supercars / Edición Limitada",
+        hero_title: "FERRARI F80",
+        hero_subtitle: "El cénit del rendimiento automotriz. Un superdeportivo concebido para redefinir los límites de la tecnología híbrida V6 y la aerodinámica derivada de la Fórmula 1 y las 24 Horas de Le Mans.",
+        hero_btn_eval: "Solicitar Asignación VIP",
+        hero_btn_specs: "Ver Especificaciones",
+        spec_power: "Potencia Máxima",
+        spec_acc: "0 - 100 km/h",
+        spec_speed: "Velocidad Máx",
+        spec_downforce: "Carga Aerodinámica",
+        tech_subtitle: "Innovación de Maranello",
+        tech_title: "Arquitectura de Leyenda",
+        f1_title: "Motor Híbrido V6 E-Turbo",
+        f1_desc: "Propulsor V6 a 120° de 3.0 litros combinado con 3 motores eléctricos y tecnología e-turbo heredada directamente de la Fórmula 1 y el 499P de Le Mans.",
+        f2_title: "Aerodinamica Activa 1+",
+        f2_desc: "Sistemas de carga aerodinámica adaptable con ala trasera activa, difusor triplano extremo y canal de flujo que generan 1.200 kg a 250 km/h.",
+        f3_title: "Chasis Multi-Material",
+        f3_desc: "Estructura celda monocasco fabricada íntegramente en fibra de carbono preimpregnada con subchasis de aluminio para máxima rigidez.",
+        light_sub: "Cockpit 1+ Layout",
+        light_title: "Diseñado Alrededor Del Piloto",
+        light_desc: "El diseño interior adopta una revolucionaria configuración '1+', centrada de forma exclusiva en la posición del conductor con acabados de fibra de carbono.",
+        light_link: "Ver Protocolo de Adquisición",
+        form_subtitle: "Solicitud Privada",
+        form_title: "Solicitar Asignación F80",
+        form_desc: "Debido a la producción limitada del Ferrari F80, las asignaciones requieren validación del historial del coleccionista.",
+        form_btn: "Enviar Solicitud VIP"
+      }
+    };
+
+    function setLanguage(lang) {
+      if (!translations[lang]) return;
+
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.innerText.toLowerCase() === lang) {
+          btn.classList.add('active');
+        }
+      });
+
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+          element.innerText = translations[lang][key];
+        }
+      });
+
+      document.documentElement.lang = lang;
+    }
+  </script>
+</body>
+</html>

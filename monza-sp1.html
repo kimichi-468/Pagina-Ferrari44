@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrari Monza SP1 | Icona Series - Single-Seater Speedster</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="autos.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-ferrari fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="pagine.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="42" viewBox="0 0 100 130" fill="#FF0000" class="me-2">
+          <path d="M10,5 L90,5 L90,125 L10,125 Z" fill="none" stroke="#D40000" stroke-width="3"/>
+          <text x="50%" y="60%" font-size="28" font-family="Montserrat" font-weight="900" fill="#ffffff" text-anchor="middle">SF</text>
+        </svg>
+        <span class="text-white font-heading fw-bold fs-5 tracking-wider ms-1">FERRARI</span>
+      </a>
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFerrari">
+        <i class="fa-solid fa-bars fs-4"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarFerrari">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="pagine.html" data-i18n="nav_home">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" data-i18n="nav_modelli">Modelli</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="pagine.html" data-i18n="nav_catalogo"><i class="fa-solid fa-car me-2"></i>Catalogo Auto</a></li>
+              <li><a class="dropdown-item" href="ferrari_purchase_requirements.html" data-i18n="nav_requisiti"><i class="fa-solid fa-shield-halved me-2"></i>Requisiti d'Acquisto</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#prestaciones" data-i18n="nav_specs">Prestazioni</a></li>
+          <li class="nav-item"><a class="nav-link" href="#evaluacion" data-i18n="nav_contact">VIP Evaluation</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-1">
+          <button class="lang-btn active" onclick="setLanguage('es')">ES</button>
+          <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+          <button class="lang-btn" onclick="setLanguage('it')">IT</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section" style="background: linear-gradient(180deg, rgba(11,11,11,0.6) 0%, rgba(11,11,11,1) 100%), url('img/monzasp1.png') center/cover no-repeat;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000">
+          <div class="text-uppercase text-danger fw-bold mb-2 tracking-widest" style="font-size: 0.85rem;" data-i18n="hero_badge_msp1">Icona Series / Single-Seater Speedster</div>
+          <h1 class="hero-title text-white mb-3" data-i18n="hero_title_msp1">FERRARI MONZA SP1</h1>
+          <p class="hero-subtitle mb-4" data-i18n="hero_subtitle_msp1">El primer speedster monoplaza de la serie Icona. Inspirado en las legendarias "barchettas" de competición de los años 50 con el motor V12 más potente jamás creado por la marca.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#evaluacion" class="btn btn-ferrari-red" data-i18n="hero_btn_eval">Solicitar Asignación VIP</a>
+            <a href="#prestaciones" class="btn btn-outline-light px-4 py-2 d-inline-flex align-items-center fs-7" style="border-radius: 2px;" data-i18n="hero_btn_specs">Ver Especificaciones</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="prestaciones" class="py-5 bg-black border-bottom border-secondary">
+    <div class="container py-3">
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="spec-card">
+            <div class="spec-value">810 CV</div>
+            <div class="spec-label" data-i18n="spec_power_msp1">Potencia Máxima</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="spec-card">
+            <div class="spec-value">2.9 s</div>
+            <div class="spec-label" data-i18n="spec_acc_msp1">0 - 100 km/h</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="spec-card">
+            <div class="spec-value">300+ km/h</div>
+            <div class="spec-label" data-i18n="spec_speed_msp1">Velocidad Máx</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="spec-card">
+            <div class="spec-value" data-i18n="spec_val_msp1">Monoplaza</div>
+            <div class="spec-label" data-i18n="spec_config_msp1">Configuración</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 my-4">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h6 class="text-danger fw-bold text-uppercase tracking-widest" data-i18n="tech_subtitle_msp1">Conducción en Solitario</h6>
+        <h2 class="text-white fw-bold display-6" data-i18n="tech_title_msp1">La Experiencia Definitiva de Velocidad</h2>
+        <div class="bg-danger mx-auto mt-3" style="width: 50px; height: 2px;"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="req-card">
+            <div class="icon-box"><i class="fa-solid fa-user"></i></div>
+            <h4 class="text-white h5 mb-3" data-i18n="f1_title_msp1">Cockpit Monoplaza</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="f1_desc_msp1">Un habitáculo enfocado exclusivamente en el conductor, replicando las sensaciones puras de los bólidos de competición clásicos.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="req-card">
+            <div class="icon-box"><i class="fa-solid fa-wind"></i></div>
+            <h4 class="text-white h5 mb-3" data-i18n="f2_title_msp1">Virtual Wind Shield</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="f2_desc_msp1">Innovador deflector virtual integrado bajo el panel de instrumentos que desvía el flujo de aire por encima de la cabeza del conductor.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="req-card">
+            <div class="icon-box"><i class="fa-solid fa-gauge-high"></i></div>
+            <h4 class="text-white h5 mb-3" data-i18n="f3_title_msp1">V12 de Aspiración Natural</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="f3_desc_msp1">El legendario bloque de 6.5 litros que entrega una potencia brutal acompañada de una sinfonía mecánica inigualable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="evaluacion" class="py-5 bg-dark border-top border-bottom border-secondary">
+    <div class="container py-4">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8" data-aos="zoom-in">
+          <div class="text-center mb-4">
+            <h6 class="text-danger fw-bold text-uppercase tracking-widest" data-i18n="form_subtitle_msp1">Colección Exclusiva</h6>
+            <h2 class="text-white fw-bold display-6" data-i18n="form_title_msp1">Solicitar Asignación Monza SP1</h2>
+            <p class="text-muted small" data-i18n="form_desc_msp1">Serie Icona ultralimitada sujeta a estricta validación de coleccionista.</p>
+          </div>
+          <form onsubmit="event.preventDefault(); alert('Solicitud para Monza SP1 enviada con éxito.');">
+            <div class="row g-3">
+              <div class="col-md-6"><input type="text" class="form-control" placeholder="Nombre completo" required></div>
+              <div class="col-md-6"><input type="email" class="form-control" placeholder="Correo electrónico" required></div>
+              <div class="col-md-6"><input type="tel" class="form-control" placeholder="Teléfono de contacto" required></div>
+              <div class="col-md-6">
+                <select class="form-select" required>
+                  <option selected value="Monza SP1">Ferrari Monza SP1</option>
+                </select>
+              </div>
+              <div class="col-12"><textarea class="form-control" rows="4" placeholder="Comentarios adicionales..."></textarea></div>
+              <div class="col-12 text-center mt-4"><button type="submit" class="btn btn-ferrari-red px-5" data-i18n="form_btn_msp1">Enviar Solicitud VIP</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container text-center">
+      <p class="small mb-0">&copy; 2026 Ferrari S.p.A. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    const translations = {
+      it: {
+        nav_home: "Home", nav_modelli: "Modelli", nav_catalogo: "Catalogo Auto", nav_requisiti: "Requisiti d'Acquisto", nav_specs: "Prestazioni", nav_contact: "Valutazione VIP",
+        hero_badge_msp1: "Serie Icona / Speedster Monoposto", hero_title_msp1: "FERRARI MONZA SP1", hero_subtitle_msp1: "La prima speedster monoposto della serie Icona. Ispirata alle leggendarie 'barchette' da competizione degli anni '50 con il motore V12 più potente mai creato dal Cavallino.",
+        hero_btn_eval: "Richiedi Assegnazione VIP", hero_btn_specs: "Specifiche Tecniche",
+        spec_power_msp1: "Potenza Massima", spec_acc_msp1: "0 - 100 km/h", spec_speed_msp1: "Velocità Max", spec_val_msp1: "Monoposto", spec_config_msp1: "Configurazione",
+        tech_subtitle_msp1: "Guida in Solitaria", tech_title_msp1: "L'Esperienza Definitiva di Velocità",
+        f1_title_msp1: "Cockpit Monoposto", f1_desc_msp1: "Un abitacolo focalizzato esclusivamente sul guidatore, replicando le sensazioni pure delle vetture da competizione classiche.",
+        f2_title_msp1: "Virtual Wind Shield", f2_desc_msp1: "Innovativo deflettore virtuale integrato sotto il cruscotto che devia il flusso d'aria sopra la testa del pilota.",
+        f3_title_msp1: "V12 Aspirato Naturale", f3_desc_msp1: "Il leggendario blocco da 6.5 litri che eroga una potenza brutale accompagnata da una sinfonia meccanica ineguagliabile.",
+        form_subtitle_msp1: "Collezione Esclusiva", form_title_msp1: "Richiedi Assegnazione Monza SP1", form_desc_msp1: "Serie Icona ultralimitata soggetta a rigorosa convalida dei collezionisti.", form_btn_msp1: "Invia Richiesta VIP"
+      },
+      en: {
+        nav_home: "Home", nav_modelli: "Models", nav_catalogo: "Car Catalog", nav_requisiti: "Purchase Requirements", nav_specs: "Performance", nav_contact: "VIP Evaluation",
+        hero_badge_msp1: "Icona Series / Single-Seater Speedster", hero_title_msp1: "FERRARI MONZA SP1", hero_subtitle_msp1: "The first single-seater speedster of the Icona series. Inspired by legendary 1950s racing barchettas featuring the most powerful V12 ever built by the brand.",
+        hero_btn_eval: "Request VIP Allocation", hero_btn_specs: "View Specifications",
+        spec_power_msp1: "Max Power", spec_acc_msp1: "0 - 100 km/h", spec_speed_msp1: "Top Speed", spec_val_msp1: "Single-Seater", spec_config_msp1: "Configuration",
+        tech_subtitle_msp1: "Solo Driving", tech_title_msp1: "The Ultimate Speed Experience",
+        f1_title_msp1: "Single-Seater Cockpit", f1_desc_msp1: "A cabin focused exclusively on the driver, replicating the pure sensations of classic racing cars.",
+        f2_title_msp1: "Virtual Wind Shield", f2_desc_msp1: "Innovative virtual deflector integrated beneath the dashboard that diverts airflow over the driver's head.",
+        f3_title_msp1: "Naturally Aspirated V12", f3_desc_msp1: "The legendary 6.5-liter block delivering brutal power accompanied by an unmatched mechanical symphony.",
+        form_subtitle_msp1: "Exclusive Collection", form_title_msp1: "Request Monza SP1 Allocation", form_desc_msp1: "Ultra-limited Icona series subject to rigorous collector validation.", form_btn_msp1: "Submit VIP Request"
+      },
+      es: {
+        nav_home: "Home", nav_modelli: "Modelli", nav_catalogo: "Catalogo Auto", nav_requisiti: "Requisiti d'Acquisto", nav_specs: "Prestazioni", nav_contact: "VIP Evaluation",
+        hero_badge_msp1: "Icona Series / Single-Seater Speedster", hero_title_msp1: "FERRARI MONZA SP1", hero_subtitle_msp1: "El primer speedster monoplaza de la serie Icona. Inspirado en las legendarias \"barchettas\" de competición de los años 50 con el motor V12 más potente jamás creado por la marca.",
+        hero_btn_eval: "Solicitar Asignación VIP", hero_btn_specs: "Ver Especificaciones",
+        spec_power_msp1: "Potencia Máxima", spec_acc_msp1: "0 - 100 km/h", spec_speed_msp1: "Velocidad Máx", spec_val_msp1: "Monoplaza", spec_config_msp1: "Configuración",
+        tech_subtitle_msp1: "Conducción en Solitario", tech_title_msp1: "La Experiencia Definitiva de Velocidad",
+        f1_title_msp1: "Cockpit Monoplaza", f1_desc_msp1: "Un habitáculo enfocado exclusivamente en el conductor, replicando las sensaciones puras de los bólidos de competición clásicos.",
+        f2_title_msp1: "Virtual Wind Shield", f2_desc_msp1: "Innovador deflector virtual integrado bajo el panel de instrumentos que desvía el flujo de aire por encima de la cabeza del conductor.",
+        f3_title_msp1: "V12 de Aspiración Natural", f3_desc_msp1: "El legendario bloque de 6.5 litros que entrega una potencia brutal acompañada de una sinfonía mecánica inigualable.",
+        form_subtitle_msp1: "Colección Exclusiva", form_title_msp1: "Solicitar Asignación Monza SP1", form_desc_msp1: "Serie Icona ultralimitada sujeta a estricta validación de coleccionista.", form_btn_msp1: "Enviar Solicitud VIP"
+      }
+    };
+    function setLanguage(lang) {
+      if (!translations[lang]) return;
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.innerText.toLowerCase() === lang) btn.classList.add('active');
+      });
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang][key]) element.innerText = translations[lang][key];
+      });
+      document.documentElement.lang = lang;
+    }
+  </script>
+</body>
+</html>

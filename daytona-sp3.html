@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrari Daytona SP3 | Icona Series - Official Ferrari Dealership</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="autos.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-ferrari fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="pagine.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="42" viewBox="0 0 100 130" fill="#FF0000" class="me-2">
+          <path d="M10,5 L90,5 L90,125 L10,125 Z" fill="none" stroke="#D40000" stroke-width="3"/>
+          <text x="50%" y="60%" font-size="28" font-family="Montserrat" font-weight="900" fill="#ffffff" text-anchor="middle">SF</text>
+        </svg>
+        <span class="text-white font-heading fw-bold fs-5 tracking-wider ms-1">FERRARI</span>
+      </a>
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFerrari">
+        <i class="fa-solid fa-bars fs-4"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarFerrari">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="pagine.html" data-i18n="nav_home">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" data-i18n="nav_modelli">Modelli</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="pagine.html" data-i18n="nav_catalogo"><i class="fa-solid fa-car me-2"></i>Catalogo Auto</a></li>
+              <li><a class="dropdown-item" href="ferrari_purchase_requirements.html" data-i18n="nav_requisiti"><i class="fa-solid fa-shield-halved me-2"></i>Requisiti d'Acquisto</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#prestaciones" data-i18n="nav_specs">Prestazioni</a></li>
+          <li class="nav-item"><a class="nav-link" href="#evaluacion" data-i18n="nav_contact">VIP Evaluation</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-1">
+          <button class="lang-btn active" onclick="setLanguage('es')">ES</button>
+          <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+          <button class="lang-btn" onclick="setLanguage('it')">IT</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section" style="background: linear-gradient(180deg, rgba(11,11,11,0.6) 0%, rgba(11,11,11,1) 100%), url('img/daytonasp3.png') center/cover no-repeat;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000">
+          <div class="text-uppercase text-danger fw-bold mb-2 tracking-widest" style="font-size: 0.85rem;" data-i18n="hero_badge_ds3">Icona Series / Limited Edition</div>
+          <h1 class="hero-title text-white mb-3" data-i18n="hero_title_ds3">FERRARI DAYTONA SP3</h1>
+          <p class="hero-subtitle mb-4" data-i18n="hero_subtitle_ds3">Inspirado en los prototipos deportivos de los años 60 que hicieron leyenda en las 24 Horas de Daytona. La máxima expresión de la serie Icona con motor V12 atmosférico central.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#evaluacion" class="btn btn-ferrari-red" data-i18n="hero_btn_eval">Solicitar Asignación VIP</a>
+            <a href="#prestaciones" class="btn btn-outline-light px-4 py-2 d-inline-flex align-items-center fs-7" style="border-radius: 2px;" data-i18n="hero_btn_specs">Ver Especificaciones</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="prestaciones" class="py-5 bg-black border-bottom border-secondary">
+    <div class="container py-3">
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="spec-card">
+            <div class="spec-value">840 CV</div>
+            <div class="spec-label" data-i18n="spec_power_ds3">Potencia Máxima</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="spec-card">
+            <div class="spec-value">2.85 s</div>
+            <div class="spec-label" data-i18n="spec_acc_ds3">0 - 100 km/h</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="spec-card">
+            <div class="spec-value">340 km/h</div>
+            <div class="spec-label" data-i18n="spec_speed_ds3">Velocidad Máx</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="spec-card">
+            <div class="spec-value">V12 6.5L</div>
+            <div class="spec-label" data-i18n="spec_engine_ds3">Motor Atmosférico</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 my-4">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h6 class="text-danger fw-bold text-uppercase tracking-widest" data-i18n="tech_subtitle_ds3">Legado de Prototipos</h6>
+        <h2 class="text-white fw-bold display-6" data-i18n="tech_title_ds3">Diseño Icona Inmortal</h2>
+        <div class="bg-danger mx-auto mt-3" style="width: 50px; height: 2px;"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="req-card">
+            <div class="icon-box"><i class="fa-solid fa-trophy"></i></div>
+            <h4 class="text-white h5 mb-3" data-i18n="f1_title_ds3">Homenaje a los 60s</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="f1_desc_ds3">Diseño inspirado en los legendarios prototipos 330 P3/4 que dominaron las pistas internacionales en la época dorada de la resistencia.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="req-card">
+            <div class="icon-box"><i class="fa-solid fa-gauge-high"></i></div>
+            <h4 class="text-white h5 mb-3" data-i18n="f2_title_ds3">V12 de Posición Central</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="f2_desc_ds3">El motor de combustión interna más potente jamás construido por Ferrari, situado en posición central trasera para un balance perfecto.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="req-card">
+            <div class="icon-box"><i class="fa-solid fa-wind"></i></div>
+            <h4 class="text-white h5 mb-3" data-i18n="f3_title_ds3">Aerodinámica Pasiva Eficiente</h4>
+            <p class="text-light small mb-0" style="opacity: 0.85;" data-i18n="f3_desc_ds3">Chimeneas y canales inferiores integrados que generan una carga aerodinámica masiva sin necesidad de elementos móviles complejos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="evaluacion" class="py-5 bg-dark border-top border-bottom border-secondary">
+    <div class="container py-4">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8" data-aos="zoom-in">
+          <div class="text-center mb-4">
+            <h6 class="text-danger fw-bold text-uppercase tracking-widest" data-i18n="form_subtitle_ds3">Colección Exclusiva</h6>
+            <h2 class="text-white fw-bold display-6" data-i18n="form_title_ds3">Solicitar Asignación Daytona SP3</h2>
+            <p class="text-muted small" data-i18n="form_desc_ds3">Serie Icona altamente limitada sujeta a rigurosa validación de coleccionista en Maranello.</p>
+          </div>
+          <form onsubmit="event.preventDefault(); alert('Solicitud para Daytona SP3 enviada con éxito.');">
+            <div class="row g-3">
+              <div class="col-md-6"><input type="text" class="form-control" placeholder="Nombre completo" required></div>
+              <div class="col-md-6"><input type="email" class="form-control" placeholder="Correo electrónico" required></div>
+              <div class="col-md-6"><input type="tel" class="form-control" placeholder="Teléfono de contacto" required></div>
+              <div class="col-md-6">
+                <select class="form-select" required>
+                  <option selected value="Daytona SP3">Ferrari Daytona SP3</option>
+                </select>
+              </div>
+              <div class="col-12"><textarea class="form-control" rows="4" placeholder="Comentarios adicionales..."></textarea></div>
+              <div class="col-12 text-center mt-4"><button type="submit" class="btn btn-ferrari-red px-5" data-i18n="form_btn_ds3">Enviar Solicitud VIP</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container text-center">
+      <p class="small mb-0">&copy; 2026 Ferrari S.p.A. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    const translations = {
+      it: {
+        nav_home: "Home", nav_modelli: "Modelli", nav_catalogo: "Catalogo Auto", nav_requisiti: "Requisiti d'Acquisto", nav_specs: "Prestazioni", nav_contact: "Valutazione VIP",
+        hero_badge_ds3: "Serie Icona / Edizione Limitata", hero_title_ds3: "FERRARI DAYTONA SP3", hero_subtitle_ds3: "Ispirato ai prototipi sportivi degli anni '60 che hanno fatto la storia alla 24 Ore di Daytona. La massima espressione della serie Icona con motore V12 aspirato centrale.",
+        hero_btn_eval: "Richiedi Assegnazione VIP", hero_btn_specs: "Specifiche Tecniche",
+        spec_power_ds3: "Potenza Massima", spec_acc_ds3: "0 - 100 km/h", spec_speed_ds3: "Velocità Max", spec_engine_ds3: "Motore Aspirato",
+        tech_subtitle_ds3: "Eredità di Prototipi", tech_title_ds3: "Design Icona Immortale",
+        f1_title_ds3: "Omaggio agli Anni '60", f1_desc_ds3: "Design ispirato ai leggendari prototipi 330 P3/4 che hanno dominato le piste internazionali nell'era d'oro dell'endurance.",
+        f2_title_ds3: "V12 Centrale", f2_desc_ds3: "Il motore a combustione interna più potente mai costruito da Ferrari, situato in posizione centrale-posteriore per un bilanciamento perfetto.",
+        f3_title_ds3: "Aerodinamica Passiva Efficiente", f3_desc_ds3: "Camini e canali inferiori integrati che generano un carico aerodinamico massiccio senza bisogno di elementi mobili complessi.",
+        form_subtitle_ds3: "Collezione Esclusiva", form_title_ds3: "Richiedi Assegnazione Daytona SP3", form_desc_ds3: "Serie Icona altamente limitata soggetta a rigorosa convalida dei collezionisti a Maranello.", form_btn_ds3: "Invia Richiesta VIP"
+      },
+      en: {
+        nav_home: "Home", nav_modelli: "Models", nav_catalogo: "Car Catalog", nav_requisiti: "Purchase Requirements", nav_specs: "Performance", nav_contact: "VIP Evaluation",
+        hero_badge_ds3: "Icona Series / Limited Edition", hero_title_ds3: "FERRARI DAYTONA SP3", hero_subtitle_ds3: "Inspired by the 1960s sports prototypes that made history at the 24 Hours of Daytona. The ultimate expression of the Icona series featuring a central naturally aspirated V12 engine.",
+        hero_btn_eval: "Request VIP Allocation", hero_btn_specs: "View Specifications",
+        spec_power_ds3: "Max Power", spec_acc_ds3: "0 - 100 km/h", spec_speed_ds3: "Top Speed", spec_engine_ds3: "Naturally Aspirated Engine",
+        tech_subtitle_ds3: "Prototype Heritage", tech_title_ds3: "Immortal Icona Design",
+        f1_title_ds3: "Tribute to the '60s", f1_desc_ds3: "Design inspired by the legendary 330 P3/4 prototypes that dominated international tracks in the golden era of endurance racing.",
+        f2_title_ds3: "Mid-Mounted V12", f2_desc_ds3: "The most powerful internal combustion engine ever built by Ferrari, placed in a rear-mid position for perfect balance.",
+        f3_title_ds3: "Efficient Passive Aerodynamics", f3_desc_ds3: "Integrated chimneys and underbody channels generating massive downforce without complex mobile elements.",
+        form_subtitle_ds3: "Exclusive Collection", form_title_ds3: "Request Daytona SP3 Allocation", form_desc_ds3: "Highly limited Icona series subject to rigorous collector validation in Maranello.", form_btn_ds3: "Submit VIP Request"
+      },
+      es: {
+        nav_home: "Home", nav_modelli: "Modelli", nav_catalogo: "Catalogo Auto", nav_requisiti: "Requisiti d'Acquisto", nav_specs: "Prestazioni", nav_contact: "VIP Evaluation",
+        hero_badge_ds3: "Icona Series / Limited Edition", hero_title_ds3: "FERRARI DAYTONA SP3", hero_subtitle_ds3: "Inspirado en los prototipos deportivos de los años 60 que hicieron leyenda en las 24 Horas de Daytona. La máxima expresión de la serie Icona con motor V12 atmosférico central.",
+        hero_btn_eval: "Solicitar Asignación VIP", hero_btn_specs: "Ver Especificaciones",
+        spec_power_ds3: "Potencia Máxima", spec_acc_ds3: "0 - 100 km/h", spec_speed_ds3: "Velocidad Máx", spec_engine_ds3: "Motor Atmosférico",
+        tech_subtitle_ds3: "Legado de Prototipos", tech_title_ds3: "Diseño Icona Inmortal",
+        f1_title_ds3: "Homenaje a los 60s", f1_desc_ds3: "Diseño inspirado en los legendarios prototipos 330 P3/4 que dominaron las pistas internacionales en la época dorada de la resistencia.",
+        f2_title_ds3: "V12 de Posición Central", f2_desc_ds3: "El motor de combustión interna más potente jamás construido por Ferrari, situado en posición central trasera para un balance perfecto.",
+        f3_title_ds3: "Aerodinámica Pasiva Eficiente", f3_desc_ds3: "Chimeneas y canales inferiores integrados que generan una carga aerodinámica masiva sin necesidad de elementos móviles complejos.",
+        form_subtitle_ds3: "Colección Exclusiva", form_title_ds3: "Solicitar Asignación Daytona SP3", form_desc_ds3: "Serie Icona altamente limitada sujeta a rigurosa validación de coleccionista en Maranello.", form_btn_ds3: "Enviar Solicitud VIP"
+      }
+    };
+    function setLanguage(lang) {
+      if (!translations[lang]) return;
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.innerText.toLowerCase() === lang) btn.classList.add('active');
+      });
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang][key]) element.innerText = translations[lang][key];
+      });
+      document.documentElement.lang = lang;
+    }
+  </script>
+</body>
+</html>

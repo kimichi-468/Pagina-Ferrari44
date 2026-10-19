@@ -1,0 +1,319 @@
+:root {
+      --ferrari-red: #D40000;
+      --ferrari-red-hover: #ff1a1a;
+      --ferrari-black: #0b0b0b;
+      --ferrari-dark-gray: #161616;
+      --ferrari-light-gray: #f8f9fa;
+      --ferrari-border-gray: #2d2d2d;
+      --text-muted-custom: #a0a0a0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--ferrari-black);
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6, .font-heading {
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Navbar styling */
+    .navbar-ferrari {
+      background-color: rgba(11, 11, 11, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 1rem 0;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-brand img {
+      height: 38px;
+    }
+
+    .nav-link {
+      color: #e0e0e0 !important;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 0.5rem 1rem !important;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--ferrari-red) !important;
+    }
+
+    .dropdown-menu-dark {
+      background-color: var(--ferrari-dark-gray);
+      border: 1px solid var(--ferrari-border-gray);
+      border-radius: 4px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    }
+
+    .dropdown-item {
+      color: #cccccc;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      padding: 0.7rem 1.2rem;
+      text-transform: uppercase;
+      transition: all 0.2s ease;
+    }
+
+    .dropdown-item:hover {
+      background-color: var(--ferrari-red);
+      color: #ffffff;
+    }
+
+    /* Language Selector */
+    .lang-btn {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 3px;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .lang-btn.active, .lang-btn:hover {
+      background-color: var(--ferrari-red);
+      border-color: var(--ferrari-red);
+      color: #fff;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      padding: 140px 0 90px;
+      background: linear-gradient(180deg, rgba(11,11,11,0.7) 0%, rgba(11,11,11,1) 100%), 
+                  url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat;
+      border-bottom: 1px solid var(--ferrari-border-gray);
+    }
+
+    .hero-title {
+      font-size: 2.8rem;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .hero-subtitle {
+      color: var(--text-muted-custom);
+      font-size: 1.05rem;
+      max-width: 750px;
+    }
+
+    /* Feature Cards */
+    .req-card {
+      background-color: var(--ferrari-dark-gray);
+      border: 1px solid var(--ferrari-border-gray);
+      border-radius: 4px;
+      padding: 2.5rem 2rem;
+      height: 100%;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .req-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 0%;
+      background-color: var(--ferrari-red);
+      transition: height 0.4s ease;
+    }
+
+    .req-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+      border-color: rgba(212, 0, 0, 0.4);
+    }
+
+    .req-card:hover::before {
+      height: 100%;
+    }
+
+    .card-number {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: rgba(255, 255, 255, 0.15);
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+    }
+
+    .icon-box {
+      width: 55px;
+      height: 55px;
+      background-color: rgba(212, 0, 0, 0.1);
+      border: 1px solid rgba(212, 0, 0, 0.3);
+      color: var(--ferrari-red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      border-radius: 4px;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Light Section (Contrast Style like Ferrari Brochure) */
+    .section-light {
+      background-color: #ffffff;
+      color: var(--ferrari-black);
+      padding: 90px 0;
+    }
+
+    .section-light h2 {
+      color: var(--ferrari-black);
+      font-weight: 800;
+    }
+
+    .section-light p {
+      color: #555555;
+    }
+
+    /* Ferrari Circular Arrow Button Style */
+    .btn-ferrari-circle {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ferrari-black);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+
+    .btn-ferrari-circle .circle {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .btn-ferrari-circle:hover .circle {
+      border-color: var(--ferrari-red);
+      background-color: var(--ferrari-red);
+      color: #fff;
+    }
+
+    /* Primary Dark Button */
+    .btn-ferrari-red {
+      background-color: var(--ferrari-red);
+      color: #fff;
+      border: none;
+      padding: 0.9rem 2.2rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-ferrari-red:hover {
+      background-color: var(--ferrari-red-hover);
+      color: #fff;
+      box-shadow: 0 8px 25px rgba(212, 0, 0, 0.4);
+    }
+
+    /* Accordion FAQ */
+    .accordion-item {
+      background-color: var(--ferrari-dark-gray);
+      border: 1px solid var(--ferrari-border-gray);
+      margin-bottom: 1rem;
+      border-radius: 4px !important;
+      overflow: hidden;
+    }
+
+    .accordion-button {
+      background-color: var(--ferrari-dark-gray);
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      padding: 1.3rem 1.5rem;
+      box-shadow: none !important;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #1f1f1f;
+      color: var(--ferrari-red);
+    }
+
+    .accordion-button::after {
+      filter: invert(1);
+    }
+
+    .accordion-body {
+      color: var(--text-muted-custom);
+      font-size: 0.9rem;
+      line-height: 1.7;
+      padding: 1.5rem;
+      border-top: 1px solid var(--ferrari-border-gray);
+    }
+
+    /* VIP Form */
+    .form-control, .form-select {
+      background-color: #121212;
+      border: 1px solid var(--ferrari-border-gray);
+      color: #ffffff;
+      border-radius: 2px;
+      padding: 0.8rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .form-control:focus, .form-select:focus {
+      background-color: #181818;
+      border-color: var(--ferrari-red);
+      color: #ffffff;
+      box-shadow: none;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #050505;
+      border-top: 1px solid var(--ferrari-border-gray);
+      padding: 60px 0 30px;
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    footer h6 {
+      color: #fff;
+      font-size: 0.85rem;
+      margin-bottom: 1.2rem;
+    }
+
+    footer a {
+      color: #888;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: var(--ferrari-red);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding-top: 25px;
+      margin-top: 40px;
+    }
